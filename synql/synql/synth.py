@@ -18,51 +18,6 @@ import pandas as pd
 import datasets as ds
 
 # TODO: it probably makes a lof of sense to move this to a separate directory and have a separate file for each implementation of the base class
-
-"""
-hello! here are some simple thoughts on how to implement a QQP synthesizer, any feedback is more than welcome :)
-
-qqp components: 
-- [ ] sql database schema (db)
-    - [ ] a way to represent this schema in a structured way
-    - [ ] a way to extract meaningful information from this schema
-- [ ] sql query (sql)
-    - [ ] a way to represent a query in a structured way
-    - [ ] a way to extract meaningful information from this query
-- [ ] natural language question (nlq)
-    - [ ] a way to represent a question in a structured way
-    - [ ] a way to extract meaningful information from this question
-
-generation components: 
-- [ ] prompts 
-    - [ ] some form of prompt versioning to use when mapping qqps to prompts
-- [ ] seed data 
-    - [ ] a way to generate seed data for a given db 
-    - [ ] a way to generate seed data for a given query
-- [ ] distibution details 
-    - [ ] a system for tracking current distribution details in order to inform future generation
-    - [ ] a way to version certain distributions based upon their details
-
-generation process:
-- [ ] a framework for generating qqps
-    - [ ] a way to adapt the generation process based upon a generation strategy
-    - [ ] a way to adapt the generation process based upon a generation model
-    - [ ] a way to adapt the generation process based upon a generation policy
-    - [ ] a way to adapt the generation process based upon a desired distribution
-    - [ ] a way to define a threshold for the generation process (e.g. number of retries)
-
-filtering process: 
-- [ ] a way to evaluate if the generated qqp is valid, given a generation strategy
-
-as a whole, we should attempt to avoid statically defining the: 
-- [ ] qqp components
-- [ ] generation components
-
-as a whole, we should statically define the:
-- [ ] data formatting for the qqp components
-- [ ] data formatting and versioning of the prompts and seed data
-"""
-
 class Synth(ABC):
 
     @abstractmethod
@@ -144,45 +99,10 @@ class Synth(ABC):
             self.qqp_data = ds.load_dataset(self.qqp_data_local_load_path)
         else:
             raise ValueError("No path provided for loading qqp data")
-
-    ##########################
-    # Get Methods            #
-    ##########################
-    @abstractmethod
-    def get_seed_data(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should retrieve data based upon the prompts and args
-
-    @abstractmethod
-    def get_qqp_data(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should retrieve data based upon the prompts and args
     
     ##########################
     # Distribution Methods   #
     ##########################
-    @abstractmethod
-    def get_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Takes a given prompt and args and returns the distribution of seed data
-        
-        {
-            "count": int,
-            "percent": float,
-            "dataset_size": int,
-        }
-        """
-        pass
-    
-    @abstractmethod
-    def set_desired_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Sets the desired distribution of seed data for a given prompt and args
-        """
-        pass
-
-    @abstractmethod
-    def get_desired_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Gets the desired distribution of seed data for a given prompt and args
-        """
-        pass
-
     @abstractmethod
     def get_desired_qqp_distribution(self, data: List[Dict], args: Dict) -> Dict:
         """Gets the desired distribution of qqp data for a given prompt and args
@@ -201,14 +121,6 @@ class Synth(ABC):
     @abstractmethod
     def format_qqp_data_request(self, prompts: Dict, args: Dict) -> Dict:
         pass
-
-    @abstractmethod
-    def generate_seed_data(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we want to store this in a way that we can easily access by prompt and args later
-
-    @abstractmethod
-    def generate_qqp(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should generate a qqp based upon the prompts and args
 
     ##########################
     # Save Methods           #
@@ -247,43 +159,10 @@ class JointGenerationSynth(Synth):
 
     def print_hello(self):
         print("hello, world!")
-
-    ##########################
-    # Get Methods            #
-    ##########################
-    def get_seed_data(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should retrieve data based upon the prompts and args
-
-
-    def get_qqp_data(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should retrieve data based upon the prompts and args
     
     ##########################
     # Distribution Methods   #
-    ##########################
-    def get_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Takes a given prompt and args and returns the distribution of seed data
-        
-        {
-            "count": int,
-            "percent": float,
-            "dataset_size": int,
-        }
-        """
-        pass
-    
-    
-    def set_desired_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Sets the desired distribution of seed data for a given prompt and args
-        """
-        pass
-
-    
-    def get_desired_seed_distribution(self, prompts: Dict, args: Dict) -> Dict:
-        """Gets the desired distribution of seed data for a given prompt and args
-        """
-        pass
-
+    ##########################    
     def get_desired_qqp_distribution(self, data: List[Dict], args: Dict) -> Dict:
         """Gets the desired distribution of qqp data for a given prompt and args. Returns a subset of the initial data based upon the desired distribution.
 
@@ -534,7 +413,6 @@ class JointGenerationSynth(Synth):
             )
         return seed_data_requests
     
-
     def format_qqp_data_request(self, prompts: Dict, args: Dict) -> Dict:
         """This function returns a json object that contains the formatted prompts for generating the qqp data for the joint generation approach.
         
@@ -638,56 +516,10 @@ class JointGenerationSynth(Synth):
                 },
             )
         return qqp_data_requests
-    
-    def generate_seed_data(self, prompts: Dict, args: Dict) -> Dict:
-        """This function generates seed data for the joint generation approach.
-        
-        :param prompts: The prompts for the seed data generation.
-        :type prompts: Dict containing the prompts for the seed data generation.
-        :param args: The arguments for the seed data generation.
-        :type args: Dict containing the arguments for the seed data generation.
-
-        prompts = {
-            "seed_topic_user_prompt": prompts.seed.topic.user,
-            "seed_topic_system_prompt": prompts.seed.topic.system,
-        }
-
-        args = {
-            "model": "gpt-4",
-            "temperature": 0.7,
-            "seed_topic_user_prompt_version": "1.0.0",
-            "seed_topic_system_prompt_version": "1.0.0",
-            "schemas": {
-                "db_id": "CREATE TABLE ... ;",
-            }
-        }
-
-        return {
-            db_id: {
-                "model": "gpt-4",
-                "messages": [
-                    {
-                        "role": "system", 
-                        "content": "...",
-                    }, {
-                        "role": "user", 
-                        "content": "...",
-                    }
-                ], 
-                "temperature": 0.7,
-            },
-            ...
-        }
-        """
-        pass # we want to store this in a way that we can easily access by prompt and args later
-
-    def generate_qqp(self, prompts: Dict, args: Dict) -> Dict:
-        pass # we should generate a qqp based upon the prompts and args
 
     ##########################
     # Save Methods           #
     ##########################
-    
     def save_seed_data_local(self, path: str, data: Dict) -> None:
         """Saves the seed data and configuration details to a local path.
         
