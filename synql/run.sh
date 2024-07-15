@@ -16,29 +16,6 @@ specify_test_command() {
     poetry run pytest -s tests/$1
 }
 
-# accept_command() {
-#     poetry run pytest tests/acceptance
-# }
-
-# lint_command() {
-#     poetry run pyright .
-# }
-
-# format_command() {
-#     poetry run isort .
-#     poetry run black .
-# }
-
-# all_command() {
-#     lint_command
-#     format_command
-#     test_command
-# }
-
-# mkdocs_command() {
-#     poetry run mkdocs serve
-# }
-
 install_command() {
     poetry install --without dev
 }
@@ -72,10 +49,6 @@ else
         "shell") shell_command ;;
         "test") test_command ;;
         "specify") specify_test_command $2 ;;
-        # "lint") lint_command ;;
-        # "format") format_command ;;
-        # "all") all_command ;;
-        # "mkdocs") mkdocs_command ;;
         "install") install_command ;;
         "dev") dev_command ;;
         *) show_help ;;
