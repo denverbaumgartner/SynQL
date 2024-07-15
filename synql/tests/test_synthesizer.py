@@ -2,9 +2,6 @@ import pytest
 from synsql import SynSql
 
 class TestJointGenerationSynth:
-    
-    def test_testing(self):
-        assert 1 == 1
 
     def test_syn(self, syn: SynSql):
         assert syn.joint_generator is not None
@@ -24,7 +21,6 @@ class TestJointGenerationSynth:
         user_prompts = syn.joint_generator.prompts.seed.topic.user
         user_prompt = [prompt for prompt in user_prompts if prompt.version == '1.0.0'][0]
         assert user_prompt.version == '1.0.0'
-        # assert user_prompt is not None
 
     def test_format_seed_data_request(self, syn: SynSql):
         syn.joint_generator.load_local_prompts(syn.prompt_path)

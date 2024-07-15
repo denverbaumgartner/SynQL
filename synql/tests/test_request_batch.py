@@ -1,4 +1,4 @@
-# This may be helpful for testting out the batch processing functionality.
+# This may be helpful for testing out the batch processing functionality.
 # Please set up the test data as needed, and feel free to reach out if you need any help: denver@semiotic.ai :)
 
 # # system packages 
