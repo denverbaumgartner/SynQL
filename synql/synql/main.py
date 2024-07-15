@@ -19,8 +19,8 @@ from .synth import JointGenerationSynth
 # external packages
 import pandas as pd
 
-class SynSql:
-    """A high level class for interfacing with the synsql library."""
+class SynQL:
+    """A high level class for interfacing with the synql library."""
 
     def __init__(self) -> None:
         self.loader = Loader()

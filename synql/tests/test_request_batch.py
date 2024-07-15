@@ -9,12 +9,12 @@
 # from openai.types import FileContent, FileDeleted, FileObject
 
 # # internal packages
-# from synsql import SynSql
-# from synsql import prepare_batch_request_file, upload_batch_request_file, create_batch_request
+# from synql import SynQL
+# from synql import prepare_batch_request_file, upload_batch_request_file, create_batch_request
 
 # class TestBatchProcessor:
 
-#     def test_prepare_batch_request_file(self, syn: SynSql):
+#     def test_prepare_batch_request_file(self, syn: SynQL):
 #         input_file_path = "tests/local_data/syn/test_generation_requests_pre_process.jsonl"
 #         output_file_path = "tests/local_data/syn/test_generation_requests_post_process.jsonl"
 #         prepare_batch_request_file(

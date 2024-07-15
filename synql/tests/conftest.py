@@ -9,16 +9,16 @@ from openai import OpenAI
 load_dotenv("../.env")
 
 # internal packages
-from synsql import SynSql
+from synql import SynQL
 
 @fixture
-def syn() -> SynSql:
-    synsql = SynSql()
+def syn() -> SynQL:
+    synql = SynQL()
     spider_path = "tests/local_data/spider/"
     db_path = "tests/local_data/spider/database/"
-    synsql.inspector.set_db_folder(db_path)
-    synsql.loader.load_spider(spider_path)
-    return synsql 
+    synql.inspector.set_db_folder(db_path)
+    synql.loader.load_spider(spider_path)
+    return synql 
 
 @fixture
 def gold_diffs() -> List[List]: 

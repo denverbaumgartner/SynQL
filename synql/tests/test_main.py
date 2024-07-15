@@ -1,9 +1,9 @@
 import pytest 
-from synsql import SynSql
+from synql import SynQL
 
 class TestMain:
 
-    def test_get_spider_create_statements(self, syn: SynSql):
+    def test_get_spider_create_statements(self, syn: SynQL):
         create_statements = syn.get_spider_create_statements()
         assert create_statements is not None
         print(create_statements['perpetrator'])

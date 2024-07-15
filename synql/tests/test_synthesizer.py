@@ -1,28 +1,28 @@
 import pytest 
-from synsql import SynSql
+from synql import SynQL
 
 class TestJointGenerationSynth:
 
-    def test_syn(self, syn: SynSql):
+    def test_syn(self, syn: SynQL):
         assert syn.joint_generator is not None
 
-    def test_prompt_path(self, syn: SynSql):
+    def test_prompt_path(self, syn: SynQL):
         assert syn.prompt_path is not None
 
-    def test_load_local_prompts(self, syn: SynSql):
+    def test_load_local_prompts(self, syn: SynQL):
         syn.joint_generator.load_local_prompts(syn.prompt_path)        
         for prompt in syn.joint_generator.prompts.seed.topic.user:
             assert prompt is not None
         assert syn.joint_generator.prompts is not None
 
-    def test_format_seed_topic_prompt(self, syn: SynSql):
+    def test_format_seed_topic_prompt(self, syn: SynQL):
         syn.joint_generator.load_local_prompts(syn.prompt_path)
         
         user_prompts = syn.joint_generator.prompts.seed.topic.user
         user_prompt = [prompt for prompt in user_prompts if prompt.version == '1.0.0'][0]
         assert user_prompt.version == '1.0.0'
 
-    def test_format_seed_data_request(self, syn: SynSql):
+    def test_format_seed_data_request(self, syn: SynQL):
         syn.joint_generator.load_local_prompts(syn.prompt_path)
         create_statements = syn.get_spider_create_statements()
 
