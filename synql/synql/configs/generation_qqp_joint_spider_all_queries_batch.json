@@ -1,0 +1,21 @@
+{
+    "run_type": "generation_qqp_joint_batch_requests",
+
+    "model": "gpt-4",
+    "temperature": 0.7,
+    "qqp_joint_user_prompt_version": "1.5.2",
+    "qqp_joint_system_prompt_version": "1.5.0",
+
+    "spider_topics_path": "local_data/parsed_generation_seed_spider_topic_results.json",
+    "spider_templates_path": "synsql/data/spider_templates.json",
+    "spider_create_statements_path": "synsql/data/spider_create_statements.json",
+    
+    "db_ids": ["restaurant_1", "hr_1", "hospital_1", "ship_mission", "mountain_photos", "voter_2", "candidate_poll", "soccer_2", "farm", "small_bank_1", "local_govt_mdm", "swimming", "flight_1", "solvency_ii", "university_basketball", "theme_gallery", "document_management", "dorm_1", "election", "insurance_policies", "film_rank", "college_2", "gymnast", "e_government", "department_management", "cinema", "workshop_paper", "local_govt_and_lot", "product_catalog", "city_record", "race_track", "allergy_1", "school_finance", "station_weather", "music_1", "customers_campaigns_ecommerce", "school_player", "icfp_1", "cre_Drama_Workshop_Groups", "music_2", "machine_repair", "local_govt_in_alabama", "college_3", "perpetrator", "loan_1", "pilot_record", "student_assessment", "game_1", "gas_company", "musical", "cre_Doc_Tracking_DB", "decoration_competition", "cre_Docs_and_Epenses", "twitter_1", "customers_and_products_contacts", "driving_school", "sakila_1", "coffee_shop", "baseball_1", "network_2", "county_public_safety", "company_1", "club_1", "browser_web", "chinook_1", "student_1", "storm_record", "debate", "products_gen_characteristics", "formula_1", "flight_4", "apartment_rentals", "wedding", "department_store", "program_share", "phone_1", "soccer_1", "customers_card_transactions", "tracking_grants_for_research", "protein_institute", "election_representative", "store_1", "cre_Theme_park", "csu_1", "climbing", "game_injury", "ship_1", "bike_1", "products_for_hire", "sports_competition", "entertainment_awards", "railway", "roller_coaster", "device", "wrestler", "music_4", "inn_1", "tracking_orders", "school_bus", "body_builder", "college_1", "company_office", "aircraft", "customer_complaints", "shop_membership", "party_host", "customer_deliveries", "match_season", "entrepreneur", "behavior_monitoring", "book_2", "store_product", "architecture", "epinions_1", "scientist_1", "journal_committee", "performance_attendance", "customers_and_addresses", "news_report", "riding_club", "insurance_and_eClaims", "manufacturer", "tracking_software_problems", "company_employee", "medicine_enzyme_interaction", "train_station", "tracking_share_transactions", "insurance_fnol", "culture_company", "movie_1", "party_people", "activity_1", "flight_company", "assets_maintenance", "customers_and_invoices", "wine_1", "manufactory_1", "e_learning", "phone_market", "cre_Doc_Control_Systems"],
+
+    "qqp_save_local": true, 
+    "qqp_save_local_path": "local_data/generation_qqp_joint_spider_all_queries_00",
+
+    "batch_requests_path": "local_data/generation_qqp_joint_spider_all_queries_00_batch_requests.jsonl",
+
+    "sample_count": 127680
+}

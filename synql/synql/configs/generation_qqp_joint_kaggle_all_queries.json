@@ -1,0 +1,37 @@
+{
+    "run_type": "generation_qqp_joint",
+
+    "model": "gpt-4",
+    "temperature": 0.7,
+    "qqp_joint_user_prompt_version": "1.5.2",
+    "qqp_joint_system_prompt_version": "1.5.0",
+
+    "run_generation": true,
+
+    "load_local_seeds": true,
+    "local_seeds_path": "local_data/generation_seed_kaggle_topics.jsonl",
+
+    "load_local_qqp": false,    
+    "local_qqp_path": "local_data/generation_qqp_joint_kaggle_all_queries_02.jsonl",
+
+    "seed_save_local": true,
+    "seed_save_local_path": "local_data/generation_seed_kaggle_topics",
+
+    "qqp_save_local": true, 
+    "qqp_save_local_path": "local_data/generation_qqp_joint_kaggle_all_queries_02",
+
+    "spider_local_path": "local_data/kaggle/",
+    "spider_templates_path": "synsql/data/kaggle_templates.json",
+    "spider_topics_path": "local_data/parsed_kaggle_topics.json",
+    "spider_create_statements_path": "synsql/data/kaggle_create_statements.json",
+
+    "request_url": "https://api.openai.com/v1/chat/completions",
+
+    "max_requests_per_minute": 10000,
+    "max_tokens_per_minute": 300000,
+    "token_encoding_name": "cl100k_base",
+    "max_attempts": 5,
+
+    "db_ids": ["USWildFires", "GreaterManchesterCrime", "WorldSoccerDataBase", "StudentMathScore", "GeoNuclearData", "TheHistoryofBaseball", "Pesticide", "WhatCDHipHop"],
+    "sample_count": 2000
+}

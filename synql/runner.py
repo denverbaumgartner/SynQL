@@ -107,7 +107,6 @@ if __name__ == "__main__":
         syn.loader.load_spider(spider_path)
 
         syn.joint_generator.load_local_prompts(syn.prompt_path)
-        # create_statements = syn.get_spider_create_statements()
         with open(config["spider_create_statements_path"], 'r') as f: 
             create_statements = json.load(f)
 
@@ -179,7 +178,7 @@ if __name__ == "__main__":
         if config['run_generation']:
             asyncio.run(
                 process_api_requests_from_file(
-                    requests_filepath=desired_sample_save_path, # config['local_qqp_path'],
+                    requests_filepath=desired_sample_save_path, 
                     save_filepath=save_filepath,
                     request_url=config['request_url'],
                     api_key=os.getenv("OPENAI_API_KEY"),
