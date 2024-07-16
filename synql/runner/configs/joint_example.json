@@ -1,5 +1,5 @@
 {
-    "topics_path": "local_data/parsed_kaggle_topics.json",
+    "topics_path": "local_data/kaggle_topics.json",
     "query_templates_path": "synsql/data/kaggle_templates.json",
 
     "data_path": "local_data/kaggle/",
@@ -20,6 +20,6 @@
     "request_url": "https://api.openai.com/v1/chat/completions",
 
     "save_local": true,
-    "save_prompt_path": "local_data/generation_qqp_joint_kaggle_all_queries",
-    "save_qqp_path": "local_data/generation_qqp_joint_kaggle_all_queries_results.jsonl",
+    "save_prompt_path": "local_data/SynQL_Kaggle_Joint_Example",
+    "save_qqp_path": "local_data/SynQL_Kaggle_Joint_Example_Results.jsonl"
 }
