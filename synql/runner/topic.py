@@ -20,9 +20,13 @@ from synql import process_api_requests_from_file, prepare_batch_request_file
 
 # external packages
 from dotenv import load_dotenv
+
+import synql.synql
 load_dotenv("../.env")
 
 if __name__ == "__main__": 
+
+    print("running topic.py: generating topics for downstream contextual information")
 
     # Parse the configuration file
     parser = argparse.ArgumentParser()
@@ -32,57 +36,76 @@ if __name__ == "__main__":
     with open(args.config, "r") as f: 
         config = json.load(f)
 
+    # Set configuration variables
+    run_generation = config["run_generation"]
+
+    data_path = config["data_path"]
+    database_path = config["database_path"]
+    create_statement_path = config["create_statement_path"]
+    
+    model = config["model"]
+    temperature = config["temperature"]
+    request_url = config["request_url"]
+    safety_scalar = config["safety_scalar"]
+    max_requests_per_minute = config["max_requests_per_minute"] * safety_scalar
+    max_tokens_per_minute = config["max_tokens_per_minute"] * safety_scalar
+    token_encoding_name = config["token_encoding_name"]
+    max_attempts = config["max_attempts"]
+    open_ai_api_key = os.getenv("OPENAI_API_KEY")
+    
+    topic_user_prompt_version = config["topic_user_prompt_version"]
+    topic_system_prompt_version = config["topic_system_prompt_version"]
+
+    save_local = config["save_local"]
+    save_prompt_path = config["save_local"]
+    save_results_path = config["save_results_path"]
+
     # Initialize SynQL
+    print("running generation_seed_spider_topics")
+    syn = synql.SynQL()
+    
+    # Load the data (assumes a Spider style data structure, see: https://github.com/taoyds/spider?tab=readme-ov-file#data-content-and-format)
+    syn.loader.load_spider(data_path)
+    syn.inspector.set_db_folder(database_path)
+    syn.joint_generator.load_local_prompts(syn.prompt_path)
 
-    if config['run_type'] == "generation_seed_spider_topics" or config['run_type'] == "generation_seed_kaggle_topics":
-        print('running generation_seed_spider_topics')
+    with open(create_statement_path, 'r') as f: 
+        create_statements = json.load(f)
 
-        syn = synsql.SynSql()
-        spider_path = config['spider_local_path']
-        db_path = config['spider_local_path'] + "database/"
-        syn.inspector.set_db_folder(db_path)
-        syn.loader.load_spider(spider_path)
+    # Set the prompts
+    prompts = {
+        "seed_topic_user_prompt": syn.joint_generator.prompts.seed.topic.user,
+        "seed_topic_system_prompt": syn.joint_generator.prompts.seed.topic.system,
+    }
 
-        syn.joint_generator.load_local_prompts(syn.prompt_path)
-        with open(config["spider_create_statements_path"], 'r') as f: 
-            create_statements = json.load(f)
+    # Set the arguments
+    args = {
+        "model": model,
+        "temperature": temperature,
+        "seed_topic_user_prompt_version": topic_user_prompt_version,
+        "seed_topic_system_prompt_version": topic_system_prompt_version,
+        "schemas": create_statements,
+        "save_local": save_local,
+        "save_local_path": save_prompt_path,  
+    }
 
-        prompts = {
-            "seed_topic_user_prompt": syn.joint_generator.prompts.seed.topic.user,
-            "seed_topic_system_prompt": syn.joint_generator.prompts.seed.topic.system,
-        }
+    # Format the data requests (prompts)
+    syn.joint_generator.format_seed_data_request(
+        prompts=prompts,
+        args=args
+    )
 
-        args = {
-            "model": config['model'],
-            "temperature": config['temperature'],
-            "seed_topic_user_prompt_version": config["seed_topic_user_prompt_version"],
-            "seed_topic_system_prompt_version": config["seed_topic_system_prompt_version"],
-            "schemas": create_statements,
-            "save_local": config["seed_save_local"],
-            "save_local_path": config["seed_save_local_path"],  
-        }
-
-        if not config["load_local_seeds"]:
-            syn.joint_generator.format_seed_data_request(
-                prompts=prompts,
-                args=args
+    if run_generation:
+        asyncio.run(
+            process_api_requests_from_file(
+                requests_filepath=save_prompt_path,
+                save_filepath=save_results_path,
+                request_url=request_url,
+                api_key=open_ai_api_key,
+                max_requests_per_minute=float(max_requests_per_minute),
+                max_tokens_per_minute=float(max_tokens_per_minute),
+                token_encoding_name=token_encoding_name,
+                max_attempts=max_attempts,
+                logging_level=20, 
             )
-        
-        save_filepath = config["local_seeds_path"].rstrip(".jsonl") + "_results.jsonl"
-        max_requests_per_minute = config["max_requests_per_minute"] * 0.5
-        max_tokens_per_minute = config["max_tokens_per_minute"] * 0.5
-
-        if config['run_generation']:
-            asyncio.run(
-                process_api_requests_from_file(
-                    requests_filepath=config['local_seeds_path'],
-                    save_filepath=save_filepath,
-                    request_url=config['request_url'],
-                    api_key=os.getenv("OPENAI_API_KEY"),
-                    max_requests_per_minute=float(max_requests_per_minute),
-                    max_tokens_per_minute=float(max_tokens_per_minute),
-                    token_encoding_name=config['token_encoding_name'],
-                    max_attempts=config['max_attempts'],
-                    logging_level=20, # logging.INFO
-                )
-            )
+        )
