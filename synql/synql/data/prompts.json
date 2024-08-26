@@ -1,0 +1,287 @@
+{
+    "seed": {
+        "topic": {
+            "user": [
+                {
+                    "version": "1.0.0",
+                    "prompt": [
+                        "Provided here are the create statements for tables in a database. Your job is to return distinct topics of questions can be asked about the database.\n",
+                        "\n",
+                        "schema: {schema}\n",
+                        "\n",
+                        "Example Topics: \n",
+                        "    1: 'College Information (Questions specifically related to the colleges. Avoid questions related to players or tryouts)'\n",
+                        "    2: 'Player Information (Questions specifically related to players. Avoid questions related to colleges or tryouts)'\n",
+                        "    3: 'Tryout Information (Questions specifically related to tryouts. Avoid questions related to colleges or players)'\n",
+                        "\n",
+                        "Only respond with the topic of the question, not the question itself, formatted as the Example Topics are. Return them in a numbered list, separated by commas."
+                    ]
+                },
+                {
+                    "version": "1.1.0",
+                    "prompt": [
+                        "Provided here are the create statements for tables in a database. Your job is to return distinct topics of questions can be asked about the database.\n",
+                        "\n",
+                        "schema: {schema}\n",
+                        "\n",
+                        "Example Topics: \n",
+                        "{{",
+                        "    '1': 'College Information (Questions specifically related to the colleges. Avoid questions related to players or tryouts)'\n",
+                        "    '2': 'Player Information (Questions specifically related to players. Avoid questions related to colleges or tryouts)'\n",
+                        "    '3': 'Tryout Information (Questions specifically related to tryouts. Avoid questions related to colleges or players)'\n",
+                        "}}",
+                        "\n",
+                        "Only respond with the topic of the question, not the question itself, formatted as the Example Topics are. Please return the topics as a numbered list within a JSON object."
+                    ]
+                },
+                {
+                    "version": "1.2.0",
+                    "prompt": [
+                        "Provided here are the create statements for tables in database {db_id}. Your job is to return distinct topics of questions can be asked about the database {db_id}.\n",
+                        "\n",
+                        "schema: {schema}\n",
+                        "\n",
+                        "Example Topics: \n",
+                        "{{",
+                        "    '1': 'College Information (Questions specifically related to the colleges. Avoid questions related to players or tryouts)'\n",
+                        "    '2': 'Player Information (Questions specifically related to players. Avoid questions related to colleges or tryouts)'\n",
+                        "    '3': 'Tryout Information (Questions specifically related to tryouts. Avoid questions related to colleges or players)'\n",
+                        "}}",
+                        "\n",
+                        "Only respond with the topic of the question, not the question itself, formatted as the Example Topics are. Please return the topics as a numbered dictionary within a JSON object."
+                    ]
+                }
+            ],
+            "system": [
+                {
+                    "version": "1.0.0",
+                    "prompt": [
+                        "Your job is to provide distinct topics that encapsulate a specific subset of questions that can be asked about a database.\n",
+                        "\n",
+                        "The goal is to generate distinct topics for the database. The topics should not overlap. Return the topics as a numbered list, seperated by commas."
+                    ]
+                },
+                {
+                    "version": "1.1.0",
+                    "prompt": [
+                        "Your job is to provide distinct topics that encapsulate a specific subset of questions that can be asked about a database.\n",
+                        "\n",
+                        "The goal is to generate distinct topics for the database. The topics should not overlap. Please return the topics as a numbered list within a JSON object. The list should have integer keys for each topic and the value should be the topic description itself. Ensure that the numbering starts at 1 and each entry is unique.",
+                        "\n",
+                        "{",
+                        "   '1': 'Topic Description for the first topic',",
+                        "   '2': 'Topic Description for the second topic',",
+                        "   '3': 'Topic Description for the third topic'",
+                        "}"
+                    ]
+                },
+                {
+                    "version": "1.2.0",
+                    "prompt": [
+                        "Your job is to provide distinct topics that encapsulate a specific subset of questions that can be asked about a database.\n",
+                        "\n",
+                        "The goal is to generate distinct topics for the database. The topics should not overlap. Please return the topics as a numbered list within a JSON object. The list should have integer keys for each topic and the value should be the topic description itself. Ensure that the numbering starts at 1 and each entry is unique.",
+                        "\n",
+                        "{",
+                        "   '1': 'Topic Description for the first topic',",
+                        "   '2': 'Topic Description for the second topic',",
+                        "   '3': 'Topic Description for the third topic'",
+                        "}",
+                        "The topics should be relevant to typical questions that would be asked about the database, so try to avoid details that are too specific to the database (such as column names). Try to make the topics distinct from each other, so that a large area of potential questions is covered."
+                    ]
+                }
+            ]
+        }
+    },
+    "qqp": {
+        "joint": {
+            "user": [
+                {
+                    "version": "1.3.0",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "Do not generate low quality questions or queries. These include queries that have irelevant structure, such as uneccessary joins. The SQL query must be valid, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "- Schema: {schema}\n",
+                        "\n",
+                        "Avoid duplicating any questions or queries from the following lists:\n",
+                        "- List of Questions to not Duplicate: {list_of_questions}\n",
+                        "- List of Queries to not Duplicate: {list_of_queries}\n",
+                        "\n",
+                        "Response Format: (question: [generated question], query: [generated query])"
+                    ]
+                },
+                {
+                    "version": "1.3.1",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "Do not generate low quality questions or queries. These include queries that have irelevant structure, such as uneccessary joins. The SQL query must be valid, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "- Schema: {schema}\n",
+                        "\n",
+                        "Avoid duplicating any questions or queries from the following lists:\n",
+                        "- List of Questions to not Duplicate: {list_of_questions}\n",
+                        "- List of Queries to not Duplicate: {list_of_queries}\n",
+                        "\n",
+                        "Response Format: {{question: <generated question>, query: <generated query>}}"
+                    ]
+                },
+                {
+                    "version": "1.4.0",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "Do not generate low quality questions or queries. These include queries that have irelevant structure, such as uneccessary joins. The SQL query must be valid, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Schema: {schema}\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "\n",
+                        "Avoid duplicating any questions or queries from the following lists:\n",
+                        "- List of Questions to not Duplicate: {list_of_questions}\n",
+                        "- List of Queries to not Duplicate: {list_of_queries}\n",
+                        "\n",
+                        "Response Format: {{question: <generated question>, query: <generated query>}}"
+                    ]
+                },
+                {
+                    "version": "1.5.0",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The generated SQL query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "Do not generate low quality questions or queries. These include queries that have irelevant structure, such as uneccessary joins. The SQL query must be valid, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Schema: {schema}\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "\n",
+                        "Do not modify the query structure. For example:\n",
+                        "Exampl Provided Query Structure: SELECT COUNT(DISTINCT ?) FROM ? WHERE ? = ?;\n",
+                        "Example Generated Query: SELECT COUNT(DISTINCT columnOne) FROM tableOne WHERE columnTwo = 1;\n",
+                        "\n",
+                        "Response Format: {{question: <generated question>, query: <generated query>}}"
+                    ]
+                },
+                {
+                    "version": "1.5.1",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The generated SQL query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "**Do not generate low quality questions or queries**. These include queries that have irelevant structure, such as uneccessary joins. **The SQL query must be valid**, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Schema: {schema}\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "\n",
+                        "Do not modify the query structure. For example:\n",
+                        "Exampl Provided Query Structure: SELECT COUNT(DISTINCT ?) FROM ? WHERE ? = ?;\n",
+                        "Example Generated Query: SELECT COUNT(DISTINCT columnOne) FROM tableOne WHERE columnTwo = 1;\n",
+                        "\n",
+                        "Response Format: {{question: <generated question>, query: <generated query>}}"
+                    ]
+                },
+                {
+                    "version": "1.5.2",
+                    "prompt": [
+                        "Given the following topic, query structure, and schema, generate a unique question and SQL query. The generated SQL query must strictly adhere to the provided query structure and be valid, logical, SQL. The question should be relevant to the topic, and the query should accurately answer the question using the given schema.\n",
+                        "**Do not generate low quality questions or queries**. These include queries that have irelevant structure, such as uneccessary joins. **The SQL query must be valid**, both in its syntax and relation to the database schema.\n",
+                        "\n",
+                        "- Schema: {schema}\n",
+                        "- Question Topic: {question_subject}\n",
+                        "- Query Structure: {query_structure}\n",
+                        "\n",
+                        "Do not modify the query structure. For example:\n",
+                        "Example Provided Query Structure: SELECT COUNT(DISTINCT ?) FROM ? WHERE ? = ?;\n",
+                        "Example Generated Query: SELECT COUNT(DISTINCT columnOne) FROM tableOne WHERE columnTwo = 1;\n",
+                        "\n",
+                        "Response Format: {{question: <generated question>, query: <generated query>}}"
+                    ]
+                }                       
+            ],
+            "system": [
+                {
+                    "version": "1.3.0",
+                    "prompt": [
+                        "Your task is to create a SQL query and an associated question based on a given subject, query structure, and schema. The query must strictly adhere to the provided query structure and be a valid SQL query. The question should be relevant to the subject and accurately answered by the query. Follow these guidelines:\n",
+                        "\n",
+                        "1) The query must be valid and logical SQL.\n",
+                        "2) The query must match the query structure exactly.\n",
+                        "3) The question must match the topic of the subject.\n",
+                        "4) The query must answer the question.\n",
+                        "5) The query must comply with the given table schema.\n",
+                        "\n",
+                        "Do not modify the query structure. For example:\n",
+                        "Query Structure: SELECT ? FROM ?;\n",
+                        "Example: SELECT * FROM Table;\n",
+                        "\n",
+                        "Avoid duplicating any questions or queries. The prompt will include a list of questions and queries that have already been generated.\n",
+                        "\n",
+                        "The response must be in the following JSON format:\n",
+                        "Format: {'question': '[generated question]', 'query': '[generated query]'}"
+                    ]
+                },
+                {
+                    "version": "1.3.1",
+                    "prompt": [
+                        "Your task is to create a SQL query and an associated question based on a given subject, query structure, and schema. The query must strictly adhere to the provided query structure and be a valid SQL query. The question should be relevant to the subject and accurately answered by the query. Follow these guidelines:\n",
+                        "\n",
+                        "1) The query must be valid and logical SQL.\n",
+                        "2) The query must match the query structure exactly.\n",
+                        "3) The question must match the topic of the subject.\n",
+                        "4) The query must answer the question.\n",
+                        "5) The query must comply with the given table schema.\n",
+                        "\n",
+                        "Do not modify the query structure. Do not keep any placeholder ('?') values. For example:\n",
+                        "Query Structure: SELECT ? FROM ? WHERE ? = ?;\n",
+                        "Generated Query: SELECT column_one FROM table_one WHERE column_two = 1;\n",
+                        "\n",
+                        "Avoid duplicating any questions or queries. The prompt will include a list of questions and queries that have already been generated.\n",
+                        "\n",
+                        "The response must be in the following JSON format:\n",
+                        "Response Format: {{\"question\": \"<generated question>\", \"query\": \"<generated query>\"}}"
+                    ]
+                },
+                {
+                    "version": "1.4.0",
+                    "prompt": [
+                        "Your task is to create a SQL query and an associated question based on a given subject, query structure, and schema. The query must strictly adhere to the provided query structure and be a valid SQL query. The question should be relevant to the subject and accurately answered by the query. Follow these guidelines:\n",
+                        "\n",
+                        "1) The query must be valid and logical SQL.\n",
+                        "2) The query must match the query structure exactly.\n",
+                        "3) The question must match the topic of the subject.\n",
+                        "4) The query must answer the question.\n",
+                        "5) The query must comply with the given table schema.\n",
+                        "\n",
+                        "Do not modify the query structure. Do not keep any placeholder ('?') values. For example:\n",
+                        "Query Structure: SELECT ? FROM ? WHERE ? = ?;\n",
+                        "Generated Query: SELECT column_one FROM table_one WHERE column_two = 1;\n",
+                        "\n",
+                        "The response must be in the following JSON format:\n",
+                        "Response Format: {{\"question\": \"<generated question>\", \"query\": \"<generated query>\"}}"
+                    ]
+                },
+                {
+                    "version": "1.5.0",
+                    "prompt": [
+                        "Your task is to create a SQL query and an associated question based on a given subject, query structure, and schema. **The query must strictly adhere to the provided query structure and be a valid SQL query. The question should be relevant to the subject and accurately answered by the query**. Follow these guidelines:\n",
+                        "\n",
+                        "1) The query must be valid and logical SQL.\n",
+                        "2) The query must match the query structure exactly.\n",
+                        "3) The question must match the topic of the subject.\n",
+                        "4) The query must answer the question.\n",
+                        "5) The query must comply with the given table schema.\n",
+                        "6) Do not ask overly vague or specific questions that a user would not typically ask.\n",
+                        "\n",
+                        "Do not modify the query structure. Do not keep any placeholder ('?') values. For example:\n",
+                        "Query Structure: SELECT ? FROM ? WHERE ? = ?;\n",
+                        "Generated Query: SELECT column_one FROM table_one WHERE column_two = 1;\n",
+                        "\n",
+                        "The response must be in the following JSON format:\n",
+                        "Response Format: {{\"question\": \"<generated question>\", \"query\": \"<generated query>\"}}"
+                    ]
+                }            
+            ]
+        }
+    }
+}
