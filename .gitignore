@@ -166,3 +166,5 @@ cython_debug/
 spider/
 runner.ipynb
 .DS_Store
+*.json
+requests/
