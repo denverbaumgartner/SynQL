@@ -1,6 +1,8 @@
 # SynQL
 SynQL is a tool for synthetically generating Text-to-SQL Question-Query Pairs (QQPs). This project is based on the SynQL paper, which we recommend reading for a detailed explanation of the methodology.
 
+![SynQL Method](runner/local_data/synql_diagram.png)
+
 ## Data 
 We have previously used the SynQL method to generate the following datasets:
 | Dataset | Description | Link |

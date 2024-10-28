@@ -1,4 +1,4 @@
-# Example
+# Example Runner
 
 ## Setup
 Make sure to download and unzip the Spider dataset from the [Spider website](https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view) to th `local_data` directory. This is used for the topic generation example. Make sure to download the KaggleDBQA dataset from the [KaggleDBQA repository](https://github.com/Chia-Hsuan-Lee/KaggleDBQA) and place it in the `local_data` directory.
