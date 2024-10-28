@@ -3,8 +3,7 @@ Joint Generation Script
 
 This script is an example of using SynQL to generate QQPs from databases, topics, and query templates. It requires a configuration file, as shown in `configs/joint_example.json`. Additionally, the script expects a `.env` file in the root of the directory. 
 
-python joint.py \ 
-    --config configs/joint_example.json
+python joint.py --config configs/joint_example.json
 """
 
 # system packages 

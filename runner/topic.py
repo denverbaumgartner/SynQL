@@ -3,8 +3,7 @@ Topic Generation Script
 
 This script is an example of using SynQL to generate topics given a database. It requires a configuration file, as shown in `configs/topic_example.json`. Additionally, the script expects a `.env` file in the root of the directory. 
 
-python topic.py \ 
-    --config configs/topic_example.json
+python topic.py --config configs/topic_example.json
 """
 
 # system packages 
