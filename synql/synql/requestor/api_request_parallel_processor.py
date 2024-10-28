@@ -158,6 +158,9 @@ async def process_api_requests_from_file(
     file_not_finished = True  # after file is empty, we'll skip reading it
     logging.debug(f"Initialization complete.")
 
+    # pause briefly to allow generated files to close
+    await asyncio.sleep(1)
+
     # initialize file reading
     with open(requests_filepath) as file:
         # `requests` will provide requests one at a time

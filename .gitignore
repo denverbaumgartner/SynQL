@@ -167,4 +167,5 @@ spider/
 runner.ipynb
 .DS_Store
 *.json
+*.jsonl
 requests/

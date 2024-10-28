@@ -533,6 +533,8 @@ class JointGenerationSynth(Synth):
             data: {format_seed_data_request},
         }
         """
+        print("here is the path:")
+        print(path)
         with open(path + "_map" + ".jsonl", 'w') as f: 
             json.dump(data['data'], f)
         with open(path + "_config" + ".jsonl", 'w') as f: 
