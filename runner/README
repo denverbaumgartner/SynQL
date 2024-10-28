@@ -1,0 +1,33 @@
+# Example
+
+## Setup
+Make sure to download and unzip the Spider dataset from the [Spider website](https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view) to th `local_data` directory. This is used for the topic generation example. 
+
+Ensure that you have installed the necessary packages for SynQL, and activate the environment. You can do this using poetry:
+
+```bash
+cd synql
+
+poetry install
+
+poetry shell
+
+cd ..
+
+cd runner
+```
+
+## Topic Generation
+To generate topics for a given dataset, you can use the `topic.py` script. We have provided an example script that uses the Spider dataset.
+
+```bash
+python topic.py \ 
+    --config configs/topic_example.json
+```
+
+This will generate topics for the Spider dataset and save them to the `local_data` directory.
+
+## Joint Generation
+We have two examples of joint generation: one for batch generation and the other for real-time generation. Batch generation is useful for generating a large number of examples at once at a discounted inference cost ([see here](https://platform.openai.com/docs/guides/batch)), while real-time generation is useful for generating examples on-the-fly. 
+
+### Real-Time Generation

@@ -164,6 +164,7 @@ cython_debug/
 # Other
 *.zip
 spider/
+kaggle/
 runner.ipynb
 .DS_Store
 *.json
