@@ -1,0 +1,1230 @@
+{
+    "pilot_record": {
+        "1": "Aircraft Information (Questions related to the aircrafts in the database, such as specifications, manufacturer details, model and order year)",
+        "2": "Pilot Details (Questions focused on pilots, such as age, nationality, rank, position, year of joining and team)",
+        "3": "Flight Records (Questions pertaining to flight records, including the relationship between pilots and aircrafts, and the dates of the flights)"
+    },
+    "storm_record": {
+        "1": "Storm Characteristics (Questions specifically related to the storms such as name, dates active, max speed, damage in millions USD, and number of deaths. Avoid questions related to regions affected by storms)",
+        "2": "Region Details (Questions specifically related to the regions such as region code and region name. Avoid questions related to storms or the impact of storms on these regions)",
+        "3": "Impact on Regions (Questions specifically related to the impact of storms on regions such as the number of cities affected. Avoid questions related to specific details of storms or regions)"
+    },
+    "icfp_1": {
+        "1": "Institutional Details (Questions about the details of the institutions, such as their names and countries)",
+        "2": "Author Information (Questions related to the details of the authors including their names)",
+        "3": "Research Papers (Questions about the papers including their titles and associated details)",
+        "4": "Authorship Information (Questions related to the association between authors, institutions and papers, including the count of authorships)"
+    },
+    "music_4": {
+        "1": "Artist Information (Questions specifically related to the artists, their age, and their famous title. Avoid questions related to volumes or music festivals)",
+        "2": "Volume Information (Questions specifically related to the volumes, their issue date, weeks on top, and related song. Avoid questions related to artists or music festivals)",
+        "3": "Music Festival Information (Questions specifically related to the music festivals, their date of ceremony, category, and result. Avoid questions related to artists or volumes)"
+    },
+    "flight_company": {
+        "1": "Airport Details (Questions specifically related to the airport information. Avoid questions related to flights or operating companies)",
+        "2": "Operating Company Information (Questions specifically related to operating companies. Avoid questions related to airports or flights)",
+        "3": "Flight Data (Questions specifically related to flight details. Avoid questions related to airports or operating companies)"
+    },
+    "body_builder": {
+        "1": "Body Builder Performance (Questions specifically related to the performance of body builders. Avoid questions related to personal information or birth details)",
+        "2": "Body Builder Personal Information (Questions specifically related to personal information of body builders. Avoid questions related to performance or birth details)",
+        "3": "Body Builder Birth Details (Questions specifically related to the birth details of body builders. Avoid questions related to performance or personal information)"
+    },
+    "race_track": {
+        "1": "Race Information (Questions specifically related to the races. Avoid questions related to tracks)",
+        "2": "Track Information (Questions specifically related to the tracks. Avoid questions related to races)",
+        "3": "Race and Track Association (Questions related to the association between races and tracks. Avoid questions solely about races or tracks)"
+    },
+    "insurance_fnol": {
+        "1": "Customer Information (Questions specifically related to customers. Avoid questions related to policies or claims)", 
+        "2": "Service Information (Questions specifically related to services. Avoid questions related to customers or policies)", 
+        "3": "Policy Information (Questions specifically related to available policies. Avoid questions related to services or settlements)", 
+        "4": "Customer Policy Details (Questions specifically related to customers' policies. Avoid questions related to services or claims)", 
+        "5": "Claim Information (Questions specifically related to claims. Avoid questions related to services or available policies)", 
+        "6": "Settlement Information (Questions specifically related to settlements. Avoid questions related to customers or claims)", 
+        "7": "First Notification of Loss Information (Questions specifically related to first notification of loss. Avoid questions related to policies or settlements)"
+    },
+    "department_store": {
+        "1": "Address Information (Questions related to addresses of suppliers, customers and department stores)",
+        "2": "Staff Information (Questions related to the staff of the department stores and their assignments)",
+        "3": "Supplier Information (Questions related to suppliers and their relationship with products and addresses)",
+        "4": "Department Store Chain Information (Questions related to the department store chains)",
+        "5": "Customer Information (Questions related to customers, their orders, and their addresses)",
+        "6": "Product Information (Questions related to products, their suppliers and their presence in customer orders)",
+        "7": "Department Store Information (Questions related to individual department stores and their departments)",
+        "8": "Department Information (Questions related to departments and their staff)",
+        "9": "Order Information (Questions related to customer orders and their items)",
+        "10": "Supplier and Product Relationship (Questions related to relationship between suppliers and products)"
+    },
+    "perpetrator": {
+        "1": "Perpetrator Details (Questions specifically related to the details of the perpetrator. Avoid questions related to people or crimes committed)",
+        "2": "People Information (Questions specifically related to the details of people. Avoid questions related to perpetrator or crimes committed)",
+        "3": "Crime Information (Questions specifically related to the crimes committed. Avoid questions related to perpetrator or people)"
+    },
+    "college_2": {
+        "1": "Classroom Information (Questions related to classrooms, such as capacity and room numbers)",
+        "2": "Department Details (Questions related to various departments, their budgets, and buildings)",
+        "3": "Course Information (Questions focused on course details such as credits, titles and affiliated departments)",
+        "4": "Instructor Details (Questions related to instructor information, including their department and salary)",
+        "5": "Section Information (Questions about specific sections including semester, year, and associated building and room number)",
+        "6": "Teaching Information (Questions related to what courses are taught by which instructor, within what section and semester)",
+        "7": "Student Details (Questions related to student information, such as their total credits and affiliated department)",
+        "8": "Course Enrollment Information (Questions related to which student has enrolled in which course and section, during which semester and year, and their grade)",
+        "9": "Advisor Information (Questions related to which student is advised by which instructor)",
+        "10": "Time Slot Details (Questions related to the day, start and end time of various time slots)",
+        "11": "Prerequisite Information (Questions about prerequisite courses for various courses)"
+    },
+    "academic": {
+        "1": "Author Information (Questions specifically related to the authors. Avoid questions related to publications or domains)",
+        "2": "Conference Information (Questions specifically related to conferences. Avoid questions related to domains or journals)",
+        "3": "Domain Information (Questions specifically related to domains. Avoid questions related to authors or conferences)",
+        "4": "Journal Information (Questions specifically related to journals. Avoid questions related to conferences or domains)",
+        "5": "Keyword Information (Questions specifically related to keywords. Avoid questions related to domains or publications)",
+        "6": "Publication Information (Questions specifically related to publications. Avoid questions related to authors or keywords)",
+        "7": "Organization Information (Questions specifically related to organizations. Avoid questions related to authors or domains)",
+        "8": "Citation Information (Questions specifically related to citations. Avoid questions related to authors or publications)"
+    },
+    "ship_1": {
+        "1": "Captain Information (Questions specifically related to the captains. Avoid questions related to ships)",
+        "2": "Ship Information (Questions specifically related to ships. Avoid questions related to captains)",
+        "3": "Data Relationships (Questions about the relation between captains and ships, including foreign key references)"
+    },
+    "flight_4": {
+        "1": "Route Details (Questions specifically related to the routes. Avoid questions related to airlines or airports)",
+        "2": "Airport Information (Questions specifically related to airports. Avoid questions related to routes or airlines)",
+        "3": "Airline Information (Questions specifically related to airlines. Avoid questions related to routes or airports)"
+    },
+    "decoration_competition": {
+        "1": "College Details (Questions focusing on the college details such as college name, leader name, and location)",
+        "2": "Member Details (Questions related to member details, their origin country and their associated college)",
+        "3": "Competition Round Details (Questions concerning the decoration competition rounds, themes, ranks and associated members)"
+    },
+    "company_office": {
+        "1": "Building Information (Questions specifically related to the buildings. Avoid questions related to companies or office locations)",
+        "2": "Company Information (Questions specifically related to companies. Avoid questions related to buildings or office locations)",
+        "3": "Office Location Information (Questions specifically related to office locations. Avoid questions related to buildings or companies)"
+    },
+    "scientist_1": {
+        "1": "Scientist Information (Questions specifically related to the scientists. Avoid questions related to projects or assignments)",
+        "2": "Project Information (Questions specifically related to projects. Avoid questions related to scientists or assignments)",
+        "3": "Assignment Information (Questions specifically related to scientist-project assignments. Avoid questions related to projects or scientists)"
+    },
+    "entertainment_awards": {
+        "1": "Festival Details (Questions specifically related to the festival details. Avoid questions related to artwork or nominations)",
+        "2": "Artwork Information (Questions specifically related to artwork. Avoid questions related to festival details or nominations)",
+        "3": "Nomination Data (Questions specifically related to nominations. Avoid questions related to festival details or artwork)"
+    },
+    "phone_market": {
+        "1": "Phone Specifications (Questions specifically related to the phone details like name, memory, carrier, price)",
+        "2": "Market Details (Questions specifically related to the market such as district, number of employees, shops, and ranking)",
+        "3": "Phone-Market Association (Questions related to the relationship between phones and markets, including stock level)"
+    },
+    "battle_death": {
+        "1": "Battle Details (Questions specifically related to the details of the battles. Avoid questions related to ships or deaths)",
+        "2": "Ship Information (Questions specifically related to the ships involved in battles. Avoid questions related to battles or deaths)",
+        "3": "Death Statistics (Questions specifically related to the number of people killed or injured. Avoid questions related to battles or ships)"
+    },
+    "manufactory_1": {
+        "1": "Manufacturer Details (Questions specifically related to the manufacturers. Avoid questions related to products)",
+        "2": "Product Information (Questions specifically related to products. Avoid questions related to manufacturers)",
+        "3": "Revenue and Price Analysis (Questions related to the revenue of manufacturers and the price of products)",
+        "4": "Manufacturer-Product Relationship (Questions relating to the relationship between manufacturers and their products)"
+    },
+    "medicine_enzyme_interaction": {
+        "1": "Medicine Information (Questions specifically related to the medicines. Avoid questions related to enzymes or interactions)",
+        "2": "Enzyme Information (Questions specifically related to enzymes. Avoid questions related to medicines or interactions)",
+        "3": "Medicine-Enzyme Interaction Information (Questions specifically related to the interactions between medicines and enzymes. Avoid questions related to just medicines or enzymes)"
+    },
+    "pets_1": {
+        "1": "Student Demographics (Questions related to the students such as their age, sex, major, advisor, and city.)",
+        "2": "Pet Characteristics (Questions related to the pets such as their type, age, and weight.)",
+        "3": "Student-Pet Relation (Questions related to the relationship between the students and their pets.)"
+    },
+    "ship_mission": {
+        "1": "Mission Details (Questions specifically related to the missions. Avoid questions related to ships or mission-ship relationship)",
+        "2": "Ship Information (Questions specifically related to ships. Avoid questions related to missions or mission-ship relationship)",
+        "3": "Mission-Ship Relationship (Questions specifically related to the relationship between missions and ships. Avoid questions solely related to missions or ships)"
+    },
+    "city_record": {
+        "1": "City Demographics and Details (Questions related to city details, population, GDP and Chinese translations)",
+        "2": "Match Details (Questions specifically related to matches, including date, venue, scores, results and competition types)",
+        "3": "Temperature Data (Questions related to the monthly temperatures recorded in different cities)",
+        "4": "Hosting Information (Questions regarding the cities that have hosted matches and the corresponding match details)"
+    },
+    "allergy_1": {
+        "1": "Allergy Types Information (Questions specifically related to the types of allergies. Avoid questions related to students or their allergy records)",
+        "2": "Student Information (Questions specifically related to students. Avoid questions related to allergies or their allergy records)",
+        "3": "Student Allergy Records (Questions specifically related to the allergy records of students. Avoid questions related to allergies or students)"
+    },
+    "museum_visit": {
+        "1": "Museum Details (Questions specifically related to the museums including their staff and opening year. Avoid questions related to customers or visits)",
+        "2": "Customer Information (Questions specifically related to customers including their membership level and age. Avoid questions related to museums or visits)",
+        "3": "Visit Records (Questions specifically related to visits including number of tickets purchased and total amount spent. Avoid questions related to museums or customers)"
+    },
+    "swimming": {
+        "1": "Swimmer Statistics and Information (Questions related to the swimmers, their nationalities and their performance in different meter races)",
+        "2": "Stadium Details and Information (Questions specifically on the stadium, its capacity, location, and opening year)",
+        "3": "Event Information (Questions related to the events, their names, and associated stadiums)",
+        "4": "Record Details (Questions revolving around the records, their results, and their association with swimmers and events)"
+    },
+    "music_1": {
+        "1": "Genre Information (Questions specifically related to music genres, their popularity and rating)",
+        "2": "Artist Information (Questions specifically related to artists, their country of origin, gender, and preferred genre)",
+        "3": "Music Files Information (Questions specifically related to music files, their size, duration, and formats)",
+        "4": "Song Information (Questions specifically related to songs, their corresponding artists, genre, rating, languages, release date, and resolution)"
+    },
+    "farm": {
+        "1": "City Information (Questions specifically related to cities. Avoid questions related to farms or competitions)",
+        "2": "Farm Information (Questions specifically related to farms. Avoid questions related to cities or competitions)",
+        "3": "Farm Competition Information (Questions specifically related to farm competitions. Avoid questions related to cities or farms)",
+        "4": "Competition Record Information (Questions specifically related to competition records. Avoid questions related to cities, farms or competitions itself)"
+    },
+    "station_weather": {
+        "1": "Train Information (Questions specifically related to the trains. Avoid questions related to stations or weather)",
+        "2": "Station Information (Questions specifically related to stations. Avoid questions related to trains or weather)",
+        "3": "Route Information (Questions specifically related to the routes. Avoid questions related to trains or stations)",
+        "4": "Weekly Weather Information (Questions specifically related to the weekly weather. Avoid questions related to trains or stations)"
+    },
+    "debate": {
+        "1": "People Information (Questions specifically related to the people. Avoid questions related to debates or debate participants)",
+        "2": "Debate Information (Questions specifically related to debate events. Avoid questions related to people or debate participants)",
+        "3": "Debate Participants Information (Questions specifically related to the participants in debates. Avoid questions related to people or debates)"
+    },
+    "customers_card_transactions": {
+        "1": "Account Information (Questions specifically related to the accounts. Avoid questions related to customers, cards or financial transactions)",
+        "2": "Customer Details (Questions specifically related to customers. Avoid questions related to accounts, cards or financial transactions)",
+        "3": "Card Details (Questions specifically related to customer cards. Avoid questions related to customers, accounts or financial transactions)",
+        "4": "Financial Transactions (Questions specifically related to financial transactions. Avoid questions related to customers, cards or accounts)"
+    },
+    "theme_gallery": {
+        "1": "Artist Information (Questions specifically related to the artists, such as their name, country, year they joined, and age)",
+        "2": "Exhibition Information (Questions specifically related to the exhibitions, including the year, theme, ticket price, and associated artist)",
+        "3": "Exhibition Record Information (Questions specifically related to the exhibition records, such as the date and attendance of each exhibition)"
+    },
+    "employee_hire_evaluation": {
+        "1": "Employee Information (Questions specifically related to the employees. Avoid questions related to shops or hiring and evaluation process)",
+        "2": "Shop Information (Questions specifically related to shops. Avoid questions related to employees or hiring and evaluation process)",
+        "3": "Hiring Information (Questions specifically related to the hiring of employees in the shops. Avoid questions related directly to shops or employees)",
+        "4": "Evaluation Information (Questions specifically related to the evaluation of employees. Avoid questions related directly to shops, employees or hiring process)"
+    },
+    "machine_repair": {
+        "1": "Repair Details (Questions pertaining to the repair table such as repair details, launch date and notes)",
+        "2": "Machine Information (Questions specifically related to machine details such as making year, class, team, series, value points and quality rank)",
+        "3": "Technician Profile (Questions focused on technician information including their names, teams, starting year and age)",
+        "4": "Repair Assignment (Questions related to the assignment of repairs to specific machines and technicians)"
+    },
+    "flight_1": {
+        "1": "Flight Information (Questions specifically related to the flights. Avoid questions related to aircrafts, employees or certificates)",
+        "2": "Aircraft Information (Questions specifically related to aircrafts. Avoid questions related to flights, employees or certificates)",
+        "3": "Employee Information (Questions specifically related to employees. Avoid questions related to flights, aircrafts or certificates)",
+        "4": "Certificate Information (Questions specifically related to certificates. Avoid questions related to flights, aircrafts or employees)"
+    },
+    "browser_web": {
+        "1": "Web Client Accelerator Information (Questions specifically related to the web client accelerator. Avoid questions related to browser or compatibility)",
+        "2": "Browser Information (Questions specifically related to the browser. Avoid questions related to the web client accelerator or compatibility)",
+        "3": "Compatibility Information (Questions specifically related to the compatibility of browsers and web client accelerators. Avoid questions related to the browser or the web client accelerator individually)"
+    },
+    "gas_company": {
+        "1": "Company Profile Information (Questions specifically related to the profile of companies in the gas industry. Avoid questions related to gas stations or the relationship between companies and gas stations)",
+        "2": "Gas Station Information (Questions specifically related to the details of gas stations. Avoid questions related to companies or the relationship between companies and gas stations)",
+        "3": "Company-Gas Station Relations (Questions specifically related to the relationship between companies and gas stations. Avoid questions related to individual company or gas station details)"
+    },
+    "architecture": {
+        "1": "Architect Information (Questions specifically related to the architects. Avoid questions related to bridges or mills)",
+        "2": "Bridge Information (Questions specifically related to bridges. Avoid questions related to architects or mills)",
+        "3": "Mill Information (Questions specifically related to mills. Avoid questions related to bridges or architects)",
+        "4": "Foreign Key References (Questions related to linking of architect with bridges and mills through foreign keys)",
+        "5": "Database Structure and Schema (Questions related to the overall structure of the database and the schema of the tables)"
+    },
+    "railway": {
+        "1": "Railway Information (Questions related to the details of the railways including builders, build times, and locations)",
+        "2": "Train Information (Questions specifically related to train details such as train numbers, names, and arrival times)",
+        "3": "Manager Details (Questions related to the managers including their name, country of origin, working years, and their level)",
+        "4": "Railway Management (Questions related to the relationship between railways and managers, including the tenure of the managers)"
+    },
+    "club_1": {
+        "1": "Student Information (Questions specifically related to the students, their age, sex, major, advisor, and city code. Avoid questions related to clubs or memberships)",
+        "2": "Club Information (Questions specifically related to clubs, their names, descriptions, and locations. Avoid questions related to students or their club memberships)",
+        "3": "Membership Information (Questions specifically related to student memberships in clubs, their positions. Avoid questions related to specific students or clubs)"
+    },
+    "concert_singer": {
+        "1": "Stadium Information (Questions specifically related to the stadiums. Avoid questions related to concerts or singers)",
+        "2": "Singer Information (Questions specifically related to singers. Avoid questions related to stadiums or concerts)",
+        "3": "Concert Information (Questions specifically related to concerts. Avoid questions related to stadiums or singers)",
+        "4": "Singer Concert Participation (Questions specifically related to singers' participation in concerts. Avoid questions solely related to stadiums, singers, or concerts)"
+    },
+    "gymnast": {
+        "1": "Gymnast Performance (Questions related to the points scored by gymnasts in different exercises. Avoid questions related to personal details of gymnasts)",
+        "2": "Gymnast Personal Information (Questions specifically related to personal details of gymnasts like age, height, hometown. Avoid questions related to performance in gymnastic exercises)",
+        "3": "Gymnast Identification (Questions related to the identification of gymnasts in the database. Avoid questions related to performance or personal details of gymnasts)"
+    },
+    "network_2": {
+        "1": "Person Information (Questions related to personal attributes such as name, age, city, gender, and job)",
+        "2": "Friendship Data (Questions related to person to person friendship connections and the year they became friends)",
+        "3": "Data Integrity and Relationship (Questions related to the integrity of the database, references, keys, and relationships between tables)",
+        "4": "Demographics (Questions related to the demographic distribution of people in the database, such as age, gender, and city distribution)",
+        "5": "Occupational Data (Questions related to the jobs of the people in the database)"
+    },
+    "coffee_shop": {
+        "1": "Shop Information (Questions specifically related to the coffee shops. Avoid questions related to members or happy hours)",
+        "2": "Member Information (Questions specifically related to the members. Avoid questions related to coffee shops or happy hours)",
+        "3": "Happy Hour Information (Questions specifically related to happy hours events. Avoid questions related to coffee shops or members)",
+        "4": "Happy Hour Member Information (Questions specifically related to the members who participate in happy hours. Avoid questions related to coffee shops or happy hours without members)"
+    },
+    "local_govt_in_alabama": {
+        "1": "Service Information (Questions related to the services offered by the local government. Avoid questions related to participants or events)",
+        "2": "Participant Information (Questions specifically related to the participants in the local government services. Avoid questions related to services or events)",
+        "3": "Event Information (Questions specifically related to the events conducted by the local government in relation to the services. Avoid questions related to services or participants)",
+        "4": "Participants in Events (Questions specifically related to the involvement of participants in specific events. Avoid questions related to individual services, participants or events)"
+    },
+    "restaurants": {
+        "1": "Geographic Information (Questions specifically related to the city, county, and region. Avoid questions related to restaurants or their specific locations)",
+        "2": "Restaurant General Information (Questions specifically related to the restaurant name, food type, city, and rating. Avoid questions related to geographic details or specific locations)",
+        "3": "Restaurant Location Details (Questions specifically related to the restaurant specific location including house number and street name. Avoid questions related to general restaurant information or geographic details)"
+    },
+    "performance_attendance": {
+        "1": "Member Information (Questions specifically related to the members, including their nationality and roles. Avoid questions related to performances or attendance)",
+        "2": "Performance Information (Questions specifically related to performances, including their date, host, and location. Avoid questions related to members or attendance)",
+        "3": "Attendance Information (Questions specifically related to attendance, including the number of pieces performed by each member at each performance. Avoid questions related to members or performances)"
+    },
+    "company_employee": {
+        "1": "Employee Demographics (Questions addressing age, name, nationality, and education of employees. Avoid questions related to companies or employment status)",
+        "2": "Company Information (Questions specifically related to companies like name, headquarters, industry, financial performance. Avoid questions related to employees or employment status)",
+        "3": "Employment Details (Questions addressing the link between employees and companies, including duration of employment. Avoid questions related to individual employee demographics or company-specific details)"
+    },
+    "singer": {
+        "1": "Singer Information (Questions specifically related to the singers. Avoid questions related to songs)",
+        "2": "Song Information (Questions specifically related to songs. Avoid questions related to singers)",
+        "3": "Sales and Chart Position (Questions specifically related to song sales and chart positions. Avoid questions related solely to singers or songs)",
+        "4": "Singer Nationality (Questions specifically related to the citizenship of singers. Avoid questions related to songs)",
+        "5": "Singer-Song Relationship (Questions specifically related to the relationship between singers and their songs. Avoid questions not involving both singers and songs)"
+    },
+    "culture_company": {
+        "1": "Book Club Information (Questions specifically related to the book club. Avoid questions related to movies or culture companies)",
+        "2": "Movie Information (Questions specifically related to movies. Avoid questions related to book clubs or culture companies)",
+        "3": "Culture Company Information (Questions specifically related to the culture company. Avoid questions related to movies or book clubs)",
+        "4": "Financial Information (Questions specifically related to the financial aspects of movies and culture companies. Avoid questions related to book clubs)",
+        "5": "Inter-table Relations (Questions specifically related to the relationships between the tables in the database. Avoid questions solely about individual tables)"
+    },
+    "apartment_rentals": {
+        "1": "Apartment Building Details (Questions specifically related to the apartment buildings, their location and management.)",
+        "2": "Apartment Characteristics (Questions specifically related to the individual apartments, their size, and types.)",
+        "3": "Apartment Facilities (Questions specifically related to facilities available in each apartment.)",
+        "4": "Guest Information (Questions specifically related to guests, their personal details and demographics.)",
+        "5": "Booking Information (Questions specifically related to apartment bookings, their status and duration.)",
+        "6": "Unit Availability (Questions specifically related to the status and availability of the apartment units.)"
+    },
+    "county_public_safety": {
+        "1": "County Public Safety Overview (Questions regarding general information about the county public safety, such as population, case burden, crime rate)",
+        "2": "Police Force Information (Questions specifically related to police force in the county, including the number of officers and residents per officer)",
+        "3": "Location-based Queries (Questions regarding the location of the county)",
+        "4": "City Demographics (Questions specifically concerning the demographics of cities within the counties, using ethnic breakdowns)",
+        "5": "County-City Relationship (Questions exploring the relationship between the counties and their cities, especially in relation to public safety)"
+    },
+    "dorm_1": {
+        "1": "Student Information (Questions specifically related to the students. Avoid questions related to dorms or amenities)",
+        "2": "Dorm Information (Questions specifically related to dorms. Avoid questions related to students or amenities)",
+        "3": "Amenities Information (Questions specifically related to amenities. Avoid questions related to students or dorms)",
+        "4": "Dorm-Student Association Info (Questions related to students living in dorms. Avoid questions related only to students, dorms or amenities)",
+        "5": "Dorm-Amenity Association Info (Questions related to amenities available in dorms. Avoid questions related only to students, dorms or amenities)"
+    },
+    "climbing": {
+        "1": "Mountain Information (Questions specifically related to the mountains. Avoid questions related to climbers)",
+        "2": "Climber Information (Questions specifically related to climbers. Avoid questions related to mountains)",
+        "3": "Climbing Records (Questions specifically related to climbing records, statistics and achievements. Avoid questions that are solely about mountain or climber details)",
+        "4": "Country-specific Climbing Information (Questions focusing on climbing information specific to certain countries. Avoid questions that are solely about specific mountains or climbers)",
+        "5": "Mountain Range Information (Questions that primarily concern the ranges in which the mountains are located. Avoid questions that are solely about specific mountains or climbers)"
+    },
+    "e_learning": {
+        "1": "Course Author and Tutor Details (Questions related to the personal and professional details of course authors and tutors)",
+        "2": "Student Information (Questions about the students, their registration, logon details and personal information)",
+        "3": "Subject Specifics (Questions about the different subjects available in the database)",
+        "4": "Course Details (Questions about the courses, their descriptions, related subjects and authors)",
+        "5": "Student Course Enrolment (Questions about students' course enrolment, date of enrolment and completion)",
+        "6": "Student Performance (Questions about the tests taken by students, their results and registration details)"
+    },
+    "cre_Doc_Template_Mgt": {
+        "1": "Template Types Information (Questions specifically related to the reference_template_types table. Avoid questions related to templates, documents or paragraphs)",
+        "2": "Templates Information (Questions specifically related to the templates table. Avoid questions related to reference_template_types, documents or paragraphs)",
+        "3": "Documents Information (Questions specifically related to the documents table. Avoid questions related to reference_template_types, templates or paragraphs)",
+        "4": "Paragraphs Information (Questions specifically related to the paragraphs table. Avoid questions related to reference_template_types, templates or documents)"
+    },
+    "party_people": {
+        "1": "Region Information (Questions specifically related to the region. Avoid questions related to parties, members or party events)",
+        "2": "Party Information (Questions specifically related to parties. Avoid questions related to regions, members or party events)",
+        "3": "Member Information (Questions specifically related to members. Avoid questions related to parties, regions or party events)",
+        "4": "Party Events Information (Questions specifically related to party events. Avoid questions related to parties, members or regions)"
+    },
+    "journal_committee": {
+        "1": "Journal Information (Questions specifically related to the journals. Avoid questions related to editors or journal_committee)",
+        "2": "Editor Information (Questions specifically related to editors. Avoid questions related to journals or journal_committee)",
+        "3": "Journal Committee Information (Questions specifically related to the journal committee. Avoid questions related to journals or editors)",
+        "4": "Sales Analysis (Questions related to the sales data of the journals)",
+        "5": "Age Analysis of Editors (Questions related to the age data of the editors)",
+        "6": "Work Type Analysis (Questions related to the work types in the journal committee)"
+    },
+    "flight_2": {
+        "1": "Airline Information (Questions specifically related to the airlines. Avoid questions related to airports or flights)",
+        "2": "Airport Information (Questions specifically related to airports. Avoid questions related to airlines or flights)",
+        "3": "Flight Details (Questions specifically related to flights. Avoid questions related to airlines or airports)",
+        "4": "Country-based Analysis (Questions focusing on country-wise distribution and analysis of airlines, airports or flights)",
+        "5": "Interrelation Queries (Questions that involve understanding the relationship between airlines, airports and flights)"
+    },
+    "tracking_software_problems": {
+        "1": "Problem Log Details (Questions specifically related to problem logs. Avoid questions related to status codes, staff, or product issues)",
+        "2": "Staff Information (Questions specifically related to the staff. Avoid questions related to problem logs, product or problem status)",
+        "3": "Product-related Issues (Questions specifically related to the products and their related issues. Avoid questions related to staff or problem logs)",
+        "4": "Problem Status Codes (Questions specifically related to problem status codes. Avoid questions related to staff, product or problem logs)",
+        "5": "Problem Category Codes (Questions specifically related to problem category codes. Avoid questions related to staff, product or problem logs)"
+    },
+    "store_product": {
+        "1": "Product Information (Questions specifically related to the products and their specifications. Avoid questions related to stores or district)",
+        "2": "Store Information (Questions specifically related to the stores, their types, and rankings. Avoid questions related to products or district)",
+        "3": "District Information (Questions specifically related to the districts, their city, and population. Avoid questions related to stores or products)",
+        "4": "Product-Store Relations (Questions specifically related to the association between products and stores. Avoid questions related to districts)",
+        "5": "Store-District Relations (Questions specifically related to the association between stores and districts. Avoid questions related to products)"
+    },
+    "tracking_orders": {
+        "1": "Customer Details (Questions related to customer information and their associated details)",
+        "2": "Invoice Records (Queries related to invoices, their dates and associated details)",
+        "3": "Order Information (Questions focused on order status, details and date of order placement)",
+        "4": "Product Details (Queries about product information and related details)",
+        "5": "Order Items (Questions related to specific items in an order and their status)",
+        "6": "Shipment Details (Questions focused on shipment records, tracking numbers, and shipment dates)",
+        "7": "Shipment Items (Queries regarding items in a specific shipment)"
+    },
+    "driving_school": {
+        "1": "Staff Information (Questions specifically related to the staff. Avoid questions related to customers, lessons or vehicles)",
+        "2": "Customer Information (Questions specifically related to customers. Avoid questions related to staff, lessons or vehicles)",
+        "3": "Vehicle Information (Questions specifically related to the vehicles. Avoid questions related to staff, customers or lessons)",
+        "4": "Lesson Information (Questions specifically related to the lessons. Avoid questions related to staff, customers or vehicles)",
+        "5": "Address Information (Questions specifically related to the addresses. Avoid questions related to staff, customers, lessons or vehicles)",
+        "6": "Customer Payments Information (Questions specifically related to the customer payments. Avoid questions related to staff, customers, lessons or vehicles)"
+    },
+    "cre_Docs_and_Epenses": {
+        "1": "Reference Document Types (Questions about the types and descriptions of documents in the database)",
+        "2": "Reference Budget Codes (Queries about the types and descriptions of budgets in the database)",
+        "3": "Project Details (Questions related to the details of the projects within the database)",
+        "4": "Documents and Related Projects (Queries regarding the documents and their associated projects)",
+        "5": "Statements and Related Documents (Questions about the statements and their associated documents)",
+        "6": "Documents with Expenses (Queries related to the documents that have associated expenses)",
+        "7": "Accounts and Related Statements (Questions about the accounts and their associated statements)"
+    },
+    "mountain_photos": {
+        "1": "Mountain Information (Questions specifically related to the mountains. Avoid questions related to camera lens or photos)",
+        "2": "Camera Lens Information (Questions specifically related to camera lens. Avoid questions related to mountains or photos)",
+        "3": "Photo Information (Questions specifically related to photos. Avoid questions related to mountains or camera lens)",
+        "4": "Relationship between Mountains and Photos (Questions related to how mountains and photos are related. Avoid questions solely about mountains, camera lens or photos)",
+        "5": "Relationship between Camera Lens and Photos (Questions related to how camera lens and photos are related. Avoid questions solely about mountains, camera lens or photos)"
+    },
+    "products_gen_characteristics": {
+        "1": "Reference Characteristic Types (Questions related to characteristic type codes and their descriptions)",
+        "2": "Reference Colors (Questions about color codes and their corresponding descriptions)",
+        "3": "Reference Product Categories (Questions related to product category codes, their descriptions, and units of measure)",
+        "4": "Characteristics of Products (Questions regarding the characteristics of products, including their types, data types, and names)",
+        "5": "Product Details (Questions specifically about product details such as product id, color code, category code, name, prices, and descriptions)",
+        "6": "Product Characteristics (Questions about the relationship between products and their characteristics, including product id and characteristic id)"
+    },
+    "sports_competition": {
+        "1": "Club Information (Questions specifically related to the clubs, their history and regional information. Avoid questions related to players, rankings or competitions)",
+        "2": "Club Ranking Information (Questions specifically related to club rankings and their achievements. Avoid questions related to individual players or competitions)",
+        "3": "Player Information (Questions specifically related to players, their positions and performance. Avoid questions related to clubs, club rankings or competitions)",
+        "4": "Competition Information (Questions specifically related to different competitions, their types and location. Avoid questions related to clubs, club rankings or players)",
+        "5": "Competition Results Information (Questions specifically related to results of various competitions. Avoid questions related to clubs, club rankings or individual players)"
+    },
+    "course_teach": {
+        "1": "Course Details (Questions specifically related to the courses. Avoid questions related to teachers or course arrangements)",
+        "2": "Teacher Information (Questions specifically related to teachers. Avoid questions related to courses or course arrangements)",
+        "3": "Course Arrangement Data (Questions specifically related to course arrangements. Avoid questions related to teachers or courses)"
+    },
+    "candidate_poll": {
+        "1": "Candidate Information (Questions specifically related to the candidates. Avoid questions related to people or poll sources)",
+        "2": "People Information (Questions specifically related to people. Avoid questions related to candidates or poll sources)",
+        "3": "Poll Source Information (Questions specifically related to the source of the poll. Avoid questions related to candidates or people)",
+        "4": "Support Rate Analysis (Questions specifically related to the support rate for candidates. Avoid questions related to people or poll sources)",
+        "5": "Opposition Rate Analysis (Questions specifically related to the opposition rate for candidates. Avoid questions related to people or poll sources)",
+        "6": "Uncertainty Rate Analysis (Questions specifically related to the unsure rate for candidates. Avoid questions related to people or poll sources)"
+    },
+    "election": {
+        "1": "County Data (Questions related to the county information. This includes population, zip code, and county name)",
+        "2": "Party Information (Questions related to the political party details. This includes the year, party name, various political positions such as governor, lieutenant governor, comptroller, attorney general, and US senate)",
+        "3": "Election Details (Concerns about the election itself. This includes the districts, delegates, parties, first elected year, and the committee)",
+        "4": "Foreign Key Relationships (Questions about the relationships between the tables, specifically how districts and parties are linked through foreign keys)"
+    },
+    "inn_1": {
+        "1": "Room Information (Questions specifically related to the rooms. Avoid questions related to reservations)",
+        "2": "Reservation Information (Questions specifically related to reservations. Avoid questions related to rooms)",
+        "3": "Guest Information (Questions specifically related to the guests, their stay duration, number of adults and kids etc. Avoid questions related to rooms or reservations)",
+        "4": "Pricing and Rates (Questions related to room rates, reservation rates etc. Avoid questions related to specific guest or room details)",
+        "5": "Database Structure (Questions related to the structure and relationships in the database. Avoid questions related to specific data entries)"
+    },
+    "book_2": {
+        "1": "Book Information (Questions specifically related to the books. Avoid questions related to publication or writers)",
+        "2": "Writer Information (Questions specifically related to writers. Avoid questions related to books or publication)",
+        "3": "Publication Information (Questions specifically related to publication. Avoid questions related to books or writers)"
+    },
+    "student_assessment": {
+        "1": "Student Personal Information (Questions related to the personal details of the students including their names, contact details, and login credentials)",
+        "2": "Course Details (Questions about the various courses available, their descriptions, and other related details)",
+        "3": "Student Course Registration and Attendance (Questions about when and which courses students have registered for and their attendance)",
+        "4": "Address Details (Questions about the different addresses linked to people in the database)",
+        "5": "People-Address Association (Questions about which address is associated with which person and for what duration)",
+        "6": "Candidate Information (Questions related to the candidates, including their details and qualifications)",
+        "7": "Candidate Assessments (Questions regarding the assessments taken by candidates, their dates and outcomes)"
+    },
+    "chinook_1": {
+        "1": "Album and Artist Information (Questions specifically related to the albums and artists. Avoid questions related to customers, employees, invoices, or tracks)",
+        "2": "Customer and Employee Information (Questions specifically related to the customers and employees. Avoid questions related to albums, artists, invoices, or tracks)",
+        "3": "Invoice and Track Information (Questions specifically related to the invoices and tracks. Avoid questions related to albums, artists, customers, or employees)",
+        "4": "Genre and Media Type Information (Questions specifically related to the genres and media types. Avoid questions related to albums, artists, customers, employees, invoices, or tracks)",
+        "5": "Playlist and Playlist Track Information (Questions specifically related to the playlists and playlist tracks. Avoid questions related to albums, artists, customers, employees, invoices, or tracks)"
+    },
+    "riding_club": {
+        "1": "Player Profile and Stats (Questions specifically related to player demographic, performance, and ranking. Avoid questions related to clubs, matches or coaches)",
+        "2": "Club Profile and History (Questions specifically related to club details, history and regional information. Avoid questions related to players, matches or coaches)",
+        "3": "Coaching Information (Questions specifically related to coach details, their associated club, and ranking. Avoid questions related to players, matches or clubs)",
+        "4": "Player-Coach Relationship (Questions specifically related to the association between players and coaches, including the tenure of the relationship. Avoid questions related to clubs, matches or individual player/coach details)",
+        "5": "Match Results and Club Performance (Questions specifically related to match results, medal counts, points and overall club performance. Avoid questions related to players, coaches or individual club details)"
+    },
+    "musical": {
+        "1": "Musical Information (Questions specifically related to the musicals. Avoid questions related to actors or specific roles)",
+        "2": "Actor Information (Questions specifically related to actors. Avoid questions related to musicals or specific roles)",
+        "3": "Role Information (Questions specifically related to the roles an actor plays in a musical. Avoid questions related to musicals or actors)",
+        "4": "Award Information (Questions specifically related to the awards a musical has won. Avoid questions related to actors or roles)",
+        "5": "Musical-Actor Association (Questions related to the connection between musicals and actors. Avoid questions related to specific roles or awards)"
+    },
+    "program_share": {
+        "1": "Program Information (Questions specifically related to the programs. Avoid questions related to channels or broadcasts)",
+        "2": "Channel Information (Questions specifically related to channels. Avoid questions related to programs or broadcasts)",
+        "3": "Broadcast Information (Questions specifically related to broadcasts. Avoid questions related to channels or programs)",
+        "4": "Broadcast Share Information (Questions specifically related to broadcast shares. Avoid questions related to programs, channels, or broadcasts)"
+    },
+    "network_1": {
+        "1": "High Schooler Information (Questions pertaining to the high schooler table, including student details, grades etc.)",
+        "2": "Friendship Relationships (Questions related to the friend table, focusing on relationships between students)",
+        "3": "Likes and Preferences (Questions based on the likes table, investigating who likes whom among the students)"
+    },
+    "film_rank": {
+        "1": "Film Information (Questions specifically related to the films. Avoid questions related to market or film market estimation)",
+        "2": "Market Information (Questions specifically related to market. Avoid questions related to films or film market estimation)",
+        "3": "Film Market Estimation Analysis (Questions specifically related to film market estimation. Avoid questions related to films or market)",
+        "4": "Directorial Analysis (Questions related to directors and their films. Avoid questions on market or film market estimation)",
+        "5": "Financial Analysis of Films (Questions related to the gross earnings of films. Avoid questions on market or film market estimation)",
+        "6": "Market Analysis by Country (Questions related to the markets in different countries. Avoid questions on films or film market estimation)",
+        "7": "Yearly Film Market Estimation (Questions related to the annual film market estimation. Avoid questions on films or markets)"
+    },
+    "poker_player": {"1": "Poker Player Performance (Questions related to a player's performance in poker tournaments, including the number of final tables made, best finish, money rank, and earnings)","2": "Player Personal Information (Questions related to the personal details of the poker players, including their nationality, name, birth date, and height)","3": "Player-People Associations (Questions regarding the association between poker players and people, like how many people are associated with a particular poker player or vice versa)"},
+    "tracking_share_transactions": {
+        "1": "Investor Details (Questions focused on information about the investors. Avoid questions related to transactions or lots)",
+        "2": "Transactions Details (Questions focused on information about the transactions. Avoid questions related to investors or lots)",
+        "3": "Lot Information (Questions focused on information about lots. Avoid questions related to investors or transactions)",
+        "4": "Sales Information (Questions specifically related to sales. Avoid questions related to purchases or transactions)",
+        "5": "Purchase Information (Questions specifically related to purchases. Avoid questions related to sales or transactions)",
+        "6": "Transaction Types (Questions related to different types of transactions. Avoid questions related to specific transactions or investors)",
+        "7": "Transaction-Lot Relations (Questions related to the relationship between transactions and lots. Avoid questions specific to individual transactions or lots)"
+    },
+    "insurance_policies": {
+        "1": "Customer Information (Questions specifically related to the customers. Avoid questions related to their policies, claims, settlements or payments)",
+        "2": "Policy Information (Questions specifically related to the insurance policies. Avoid questions related to customers, claims, settlements or payments)",
+        "3": "Claim Details (Questions specifically related to the claims made. Avoid questions related to customers, their policies, settlements or payments)",
+        "4": "Settlement Data (Questions specifically related to the settlements of claims. Avoid questions related to customers, their policies, claims or payments)",
+        "5": "Payment Information (Questions specifically related to the payments made. Avoid questions related to customers, their policies, claims or settlements)"
+    },
+    "device": {
+        "1": "Device Information (Questions specifically related to the device details like device id, device type, carrier, package version, applications and software platform)",
+        "2": "Shop Details (Questions specifically related to the shop including shop id, shop name, location, open date and open year)",
+        "3": "Inventory Management (Questions related to the stock of devices in each shop including shop id, device id and quantity)",
+        "4": "Device-Shop Relation (Questions exploring the relationship between device and shop, focusing on aspects like which device is available in which shop)",
+        "5": "Shop Stock Analysis (Questions related to analysis of the stock in each shop, focusing on aspects like which shop has the most quantity of a particular device)"
+    },
+    "dog_kennels": {
+        "1": "Breed Information (Questions specifically related to dog breeds. Avoid questions related to other tables)",
+        "2": "Charge Details (Questions specifically related to different charges. Avoid questions related to other tables)",
+        "3": "Size Classification (Questions specifically related to sizes of the dogs. Avoid questions related to other tables)",
+        "4": "Treatment Types (Questions specifically related to treatment types. Avoid questions related to other tables)",
+        "5": "Owner Details (Questions specifically related to the dog owners. Avoid questions related to other tables)",
+        "6": "Dog Information (Questions specifically related to the dogs. Avoid questions related to other tables)",
+        "7": "Professional Information (Questions specifically related to the professionals. Avoid questions related to other tables)",
+        "8": "Treatment Records (Questions specifically related to the treatments given to dogs. Avoid questions related to other tables)"
+    },
+    "world_1": {
+        "1": "City Information (Questions related to the cities, including their names, districts, and populations. Avoid questions related to countries or languages)",
+        "2": "Country Details (Questions specifically related to countries. This could include their names, continents, regions, surface areas, populations, and government forms. Avoid questions related to cities or languages)",
+        "3": "Country Languages (Questions specifically related to the languages spoken in countries. This could include whether the language is official and the percentage of the population that speaks it. Avoid questions related to cities or countries)",
+        "4": "Interrelation between Tables (Questions that involve joining tables or querying data across multiple tables. This could involve matching city information with country details or languages)"
+    },
+    "csu_1": {
+        "1": "Campus Information (Questions specifically related to information about campuses. Avoid questions related to fees, degrees, enrollment, and faculty)",
+        "2": "Fee Information (Questions specifically related to fees for the campuses. Avoid questions related to campuses, degrees, enrollment, and faculty)",
+        "3": "Degree Information (Questions specifically related to degrees offered at the campuses. Avoid questions related to campuses, fees, enrollment, and faculty)",
+        "4": "Discipline Enrollment Information (Questions specifically related to the enrollment in different disciplines at the campuses. Avoid questions related to campuses, fees, degrees, and faculty)",
+        "5": "Total Enrollment Information (Questions specifically related to the total enrollment at the campuses. Avoid questions related to campuses, fees, degrees, and discipline enrollments)",
+        "6": "Faculty Information (Questions specifically related to faculty at the campuses. Avoid questions related to campuses, fees, degrees, and enrollments)"
+    },
+    "game_injury": {
+        "1": "Stadium Details (Questions related to the stadium like name, home games, average and total attendance and capacity percentage)",
+        "2": "Game Information (Questions related to specific games including season, date, home and away teams, score and competition)",
+        "3": "Injury Reports (Questions related to injury incidents including player involved, injury sustained, number of matches affected and source)"
+    },
+    "cinema": {
+        "1": "Film Information (Questions specifically related to the films. Avoid questions related to cinemas or schedules)",
+        "2": "Cinema Information (Questions specifically related to the cinemas. Avoid questions related to films or schedules)",
+        "3": "Schedule Information (Questions specifically related to the schedules. Avoid questions related to films or cinemas)",
+        "4": "Film-Cinema Relationship (Questions related to the relationship between films and cinemas. Avoid questions solely about film or cinema details)",
+        "5": "Film-Schedule Relationship (Questions related to the relationship between films and their schedules. Avoid questions solely about film or schedule details)",
+        "6": "Cinema-Schedule Relationship (Questions related to the relationship between cinemas and their schedules. Avoid questions solely about cinema or schedule details)"
+    },
+    "products_for_hire": {
+        "1": "Discount Coupons Information (Questions related to the discount coupons issued, their amounts and issue dates)",
+        "2": "Customer Information (Questions related to the customers, their personal details and their association with discount coupons)",
+        "3": "Booking Information (Questions related to product bookings, their status, and details about damages, hire counts and amounts payable)",
+        "4": "Product Information (Questions specifically related to the products available for hire, their types, names, descriptions and hire costs)",
+        "5": "Payment Information (Questions related to the payments made by customers, payment types, amounts due and paid, and whether the payment was made in full)",
+        "6": "Product Booking Details (Questions related to the products booked, their return status, late return status, count of bookings and booking amounts)",
+        "7": "Product Availability (Questions related to the availability of products, their status and related booking details)"
+    },
+    "small_bank_1": {
+        "1": "Customer Information (Questions specifically related to the customers. Avoid questions related to savings or checking accounts)",
+        "2": "Savings Account Information (Questions specifically related to savings accounts. Avoid questions related to customers or checking accounts)",
+        "3": "Checking Account Information (Questions specifically related to checking accounts. Avoid questions related to customers or savings accounts)"
+    },
+    "shop_membership": {
+        "1": "Member Information (Questions specifically related to the members, their id, card number, name, hometown, and level. Avoid questions related to branches, memberships or purchases)",
+        "2": "Branch Information (Questions specifically related to the branch, its id, name, opening year, address road, city, and membership amount. Avoid questions related to members, memberships or purchases)",
+        "3": "Membership Register Branch Information (Questions specifically related to the membership registration at branches. This includes questions about member id, branch id, and registration year. Avoid questions related to members, branches or purchases)",
+        "4": "Purchase Information (Questions specifically related to purchases made by members at branches. This includes questions about member id, branch id, year, and the total amount in pounds. Avoid questions related to members, branches or membership registrations)"
+    },
+    "movie_1": {
+        "1": "Movie Information (Questions specifically related to the movies. Avoid questions related to reviewers or ratings)",
+        "2": "Reviewer Information (Questions specifically related to reviewers. Avoid questions related to movies or ratings)",
+        "3": "Rating Information (Questions specifically related to ratings. Avoid questions related to movies or reviewers)",
+        "4": "Director Information (Questions specifically about the directors. Avoid questions related to movies, reviewers or ratings)",
+        "5": "Movie-Reviewer Relationship (Questions that tie movies and reviewers together. Avoid questions solely about movies or reviewers)",
+        "6": "Movie-Rating Relationship (Questions that tie movies and ratings together. Avoid questions solely about movies or ratings)",
+        "7": "Reviewer-Rating Relationship (Questions that tie reviewers and ratings together. Avoid questions solely about reviewers or ratings)"
+    },
+    "student_1": {   
+        "1": "Student Details (Questions related to the students including their names, grades and classroom numbers)",
+        "2": "Teacher Information (Questions specifically focusing on details about the teachers including their names and classroom numbers)",
+        "3": "Classroom Analysis (Questions pertaining to the allocation of classrooms to both students and teachers)",
+        "4": "Performance Evaluation (Questions related to students' grades and performance)"
+    },
+    "music_2": {
+        "1": "Song Information (Questions specifically related to the songs. Avoid questions related to albums, band members or instruments)",
+        "2": "Album Information (Questions specifically related to albums. Avoid questions related to songs, band members or instruments)",
+        "3": "Band Member Information (Questions specifically related to the band members. Avoid questions related to songs, albums or instruments)",
+        "4": "Instrument Information (Questions specifically related to the instruments played in songs. Avoid questions related to songs, albums or band members)",
+        "5": "Performance Details (Questions specifically related to the performance of songs. Avoid questions related to albums, band members or instruments)",
+        "6": "Track List Details (Questions specifically related to the track lists in albums. Avoid questions related to songs, band members or instruments)",
+        "7": "Vocal Details (Questions specifically related to the vocals in songs. Avoid questions related to albums, band members or instruments)"
+    },
+    "voter_1": {
+        "1": "Area Code-State Mapping (Questions related to the relationship between area codes and states. Avoid questions related to contestants or votes)",
+        "2": "Contestant Details (Questions specifically related to contestants. Avoid questions related to area codes or votes)",
+        "3": "Voting Data (Questions related to the vote records. Avoid questions related to area codes or contestants)"
+    },
+    "manufacturer": {
+        "1": "Manufacturer Information (Questions specifically related to the manufacturers such as their opening year, name, number of factories and shops)",
+        "2": "Furniture Information (Questions specifically related to furniture items, their components and market rates)",
+        "3": "Furniture-Manufacturer Relationship (Questions related to the association between the furniture and manufacturers, including the pricing in dollar for each furniture item by different manufacturers)"
+    },
+    "customers_campaigns_ecommerce": {
+        "1": "Premises Information (Questions related to premises details, types and their unique identifiers)",
+        "2": "Product Information (Questions about product categories, names and their unique identifiers)",
+        "3": "Customer Information (Questions about customer names, contact details, payment methods, and login credentials)",
+        "4": "Mailshot Campaigns Information (Questions related to mailshot campaigns, their start and end dates, and product categories)",
+        "5": "Customer Addresses Information (Questions about customers' addresses, their type, and duration of address)",
+        "6": "Customer Orders Information (Questions about customers' orders, their status, delivery details, and shipping charges)",
+        "7": "Mailshot Customers Information (Questions regarding the association between mailshots and customers)",
+        "8": "Order Items Information (Questions related to the status, delivery, and quantity of order items)"
+    },
+    "school_finance": {
+        "1": "School Information (Questions specifically related to the schools, their locations, mascots, enrollments, and classes. Avoid questions related to budgets or endowments)",
+        "2": "Budget Information (Questions specifically related to school budgets, budgeted amounts, invested amounts, and budget percentages. Avoid questions related to schools or endowments)",
+        "3": "Endowment Information (Questions specifically related to endowments, the donator information, and donation amounts. Avoid questions related to schools or budgets)"
+    },
+    "loan_1": {
+        "1": "Bank Branch Information (Questions specifically related to the bank branches, their locations and customer base)",
+        "2": "Customer Account Information (Questions specifically related to the customers, their account types, balances, credit scores and associated branches)",
+        "3": "Loan Information (Questions specifically related to the loans, the types, associated customers and branches, and loan amounts)"
+    },
+    "aircraft": {
+        "1": "Pilot Information (Questions specifically related to the pilots. Avoid questions related to aircraft or matches)",
+        "2": "Aircraft Specifications (Questions specifically related to the aircrafts. Avoid questions related to pilots or airports)",
+        "3": "Match Details (Questions specifically related to the matches. Avoid questions related to pilots or aircrafts)",
+        "4": "Airport Statistics (Questions specifically related to the airports. Avoid questions related to aircrafts or matches)",
+        "5": "Airport-Aircraft Association (Questions specifically related to the connections between airports and aircrafts. Avoid questions related to matches or pilots)"
+    },
+    "local_govt_and_lot": {
+        "1": "Customer Information (Questions related to the details of customers, their events and associated notes)",
+        "2": "Property Information (Questions related to properties and their associated residents)",
+        "3": "Resident Information (Questions related to residents, their services and the properties they reside in)",
+        "4": "Organization Information (Questions related to organizations, their services and things)",
+        "5": "Service Information (Questions related to services provided by the organizations and requested by the residents)",
+        "6": "Thing Information (Questions related to things managed by organizations, their statuses and locations)",
+        "7": "Resident-Service Relations (Questions related to services requested and provided to residents)",
+        "8": "Customer-Event Relations (Questions related to events that involve customers)",
+        "9": "Thing Status and Location (Questions related to the status and location of things over time)"
+    },
+    "school_bus": {
+        "1": "Driver Information (Questions specifically related to the drivers. Avoid questions related to schools or school buses)",
+        "2": "School Information (Questions specifically related to schools. Avoid questions related to drivers or school buses)",
+        "3": "School Bus Information (Questions specifically related to school buses. Avoid questions related to schools or drivers)",
+        "4": "Relationship between Drivers and School Buses (Questions about the association of drivers with specific school buses. Avoid questions solely about drivers or school buses)",
+        "5": "Relationship between Schools and School Buses (Questions about the association of schools with specific school buses. Avoid questions solely about schools or school buses)"
+    },
+    "e_government": {
+        "1": "Address Information (Questions related to the details of addresses stored in the database)",
+        "2": "Service Details (Queries about the different services provided and their descriptions)",
+        "3": "Form Details (Queries about the different forms associated with services)",
+        "4": "Individual Information (Questions related to the individuals in the database including their contact information)",
+        "5": "Organization Information (Queries about the organizations in the database, including their formation date and VAT number)",
+        "6": "Party Information (Questions related to parties, their contact information, and payment methods)",
+        "7": "Organization-Individual Contacts (Questions about the contact between organizations and individuals)",
+        "8": "Party-Address Association (Queries about the addresses associated with different parties)",
+        "9": "Party-Form Completion (Questions about the forms completed by different parties)",
+        "10": "Party-Service Bookings (Queries about the services booked by different parties)"
+    },
+    "sakila_1": {
+        "1": "Actor Information (Questions related to actors in the database)",
+        "2": "Address and Geographic Information (Questions about addresses, cities, countries)",
+        "3": "Customer Information (Questions about customers and their related details)",
+        "4": "Film Details (Questions about the films, their categories, language, and associated actors)",
+        "5": "Inventory and Store Information (Questions about film inventory and store details)",
+        "6": "Rental Transactions (Questions about rental and payment details)",
+        "7": "Staff Information (Questions about staff members and their associated store)"
+    },
+    "wedding": {
+        "1": "People Information (Questions specifically related to the people involved in the weddings. Avoid questions related to churches or weddings)",
+        "2": "Church Information (Questions specifically related to the churches where weddings take place. Avoid questions related to people or weddings)",
+        "3": "Wedding Details (Questions specifically related to the weddings. Avoid questions related to people or churches)"
+    },
+    "tracking_grants_for_research": {
+        "1": "Document and Document Types (Questions related to the documents and their types, sent dates and received dates)",
+        "2": "Grants and Organisations (Questions specifically related to grants, the organisations receiving them and the grant period)",
+        "3": "Organisation Types and Details (Questions specifically related to types of organisations and their specific details)",
+        "4": "Project Outcomes and Descriptions (Questions pertaining to the outcomes of different projects and their descriptions)",
+        "5": "Project Staff and Roles (Questions related to staff involved in the projects, their roles and employment duration)",
+        "6": "Projects and Organisations (Questions specifically about projects, their details and the organisations managing them)",
+        "7": "Research Staff and Employers (Questions related to research staff, their employers and their specific details)",
+        "8": "Staff Roles and Descriptions (Questions specifically related to the roles of the staff and the descriptions of these roles)",
+        "9": "Tasks and Projects (Questions related to the tasks undertaken in projects, their details and objectives)"
+    },
+    "twitter_1": {
+        "1": "User Profiles (Questions specifically related to user profiles. Avoid questions related to tweets or followers)",
+        "2": "Tweets Information (Questions specifically related to tweets. Avoid questions related to user profiles or followers)",
+        "3": "Followers Information (Questions specifically related to followers. Avoid questions related to user profiles or tweets)"
+    },
+    "entrepreneur": {
+        "1": "Entrepreneur Information (Questions specifically related to the entrepreneurs. Avoid questions related to people or financial details)",
+        "2": "People Information (Questions specifically related to people. Avoid questions related to entrepreneurs or financial details)",
+        "3": "Financial Information (Questions specifically related to financial aspects such as money requested or investors. Avoid questions related to entrepreneurs or people)"
+    },
+    "cre_Doc_Control_Systems": {
+        "1": "Document Types (Questions related to the different types of documents in the database)",
+        "2": "Roles and Employees (Questions related to the roles and employees within the organization)",
+        "3": "Addresses (Questions specifically related to the addresses stored in the database)",
+        "4": "Document Status (Questions related to the various statuses a document can have)",
+        "5": "Shipping Agents (Questions related to the shipping agents involved in the document process)",
+        "6": "Documents and Details (Questions focusing on the documents and their various details)",
+        "7": "Document Drafts (Questions related to the drafts of these documents)",
+        "8": "Draft Copies (Questions focusing on the copies made from the document drafts)",
+        "9": "Circulation History (Questions related to the circulation history of the document drafts and their copies)",
+        "10": "Mailed Documents (Questions related to the documents that have been mailed and their mailing details)"
+    },
+    "roller_coaster": {
+        "1": "Roller Coaster Attributes (Questions related to the specific attributes of the roller coasters like height, speed, length, status etc. Avoid questions related to the park or country they are located in)",
+        "2": "Roller Coaster Location (Questions related to the location of the roller coasters, including the park and the country. Avoid questions related to specific roller coaster attributes)",
+        "3": "Country Attributes (Questions related to the attributes of the countries like population, area, languages etc. Avoid questions related to the roller coasters in those countries)"
+    },
+    "tvshow": {
+        "1": "TV Channel Details (Questions specifically related to the TV channels. Avoid questions related to TV series or cartoons)",
+        "2": "TV Series Information (Questions specifically related to TV series. Avoid questions related to TV channels or cartoons)",
+        "3": "Cartoon Information (Questions specifically related to cartoons. Avoid questions related to TV channels or TV series)"
+    },
+    "activity_1": {   
+        "1": "Student Data (Questions pertaining to student's personal and academic details)",  
+        "2": "Faculty Data (Questions related to faculty members and their professional details)",  
+        "3": "Activity Details (Questions related to different activities and their identifiers)",  
+        "4": "Students' Participation (Questions on students' involvement in different activities)",  
+        "5": "Faculty Participation (Questions concerning faculty members' involvement in different activities)"
+    },
+    "restaurant_1": {
+        "1": "Student Information (Questions specifically related to the student details. Avoid questions related to restaurant or visits)",
+        "2": "Restaurant Information (Questions specifically related to the restaurants. Avoid questions related to student or visits)",
+        "3": "Restaurant Type Information (Questions specifically related to the types of restaurants. Avoid questions related to student or visits)",
+        "4": "Visit Information (Questions specifically related to student visits to restaurants. Avoid questions related to student or restaurant details)",
+        "5": "City Information (Questions specifically related to the cities where students live. This information can be inferred from the city_code field in the student table)"
+    },
+    "hr_1": {
+        "1": "Region and Country Information (Questions specifically related to regions and countries. Avoid questions related to employees, jobs, departments, or locations)",
+        "2": "Department and Job Information (Questions specifically related to departments and jobs. Avoid questions related to regions, countries, employees, or locations)",
+        "3": "Employee Information (Questions specifically related to employees. Avoid questions related to regions, countries, departments, or jobs)",
+        "4": "Job History Information (Questions specifically related to job history. Avoid questions related to regions, countries, departments, or employees)",
+        "5": "Location Information (Questions specifically related to locations. Avoid questions related to regions, countries, departments, employees, or jobs)"
+    },
+    "imdb": {
+        "1": "Actor Information (Questions specifically related to the actors. Avoid questions related to movies or directors)",
+        "2": "Movie Information (Questions specifically related to the movies. Avoid questions related to actors or producers)",
+        "3": "Director Information (Questions specifically related to the directors. Avoid questions related to movies or actors)",
+        "4": "Producer Information (Questions specifically related to the producers. Avoid questions related to movies or actors)",
+        "5": "Copyright Information (Questions specifically related to the copyrights. Avoid questions related to movies or actors)",
+        "6": "Genre Classification (Questions specifically related to the genres. Avoid questions related to movies or actors)",
+        "7": "Company Information (Questions specifically related to the companies. Avoid questions related to movies or actors)",
+        "8": "Keyword Information (Questions specifically related to the keywords. Avoid questions related to movies or actors)",
+        "9": "TV Series Information (Questions specifically related to the TV series. Avoid questions related to movies or actors)",
+        "10": "Writer Information (Questions specifically related to the writers. Avoid questions related to movies or actors)"
+    },
+    "orchestra": {
+        "1": "Conductor Information (Questions specifically related to the conductors. Avoid questions related to orchestras, performances or shows)",
+        "2": "Orchestra Details (Questions specifically related to orchestras. Avoid questions related to conductors, performances or shows)",
+        "3": "Performance Data (Questions specifically related to performances. Avoid questions related to conductors, orchestras or shows)",
+        "4": "Show Insights (Questions specifically related to shows. Avoid questions related to conductors, orchestras or performances)"
+    },
+    "news_report": {
+        "1": "Event Information (Questions specifically related to the events. Avoid questions related to journalists or news reports)",
+        "2": "Journalist Information (Questions specifically related to journalists. Avoid questions related to events or news reports)",
+        "3": "News Report Information (Questions specifically related to news reports. Avoid questions related to events or journalists)",
+        "4": "Relational Data Queries (Questions related to how events, journalists, and news reports are interconnected through foreign keys)"
+    },
+    "cre_Doc_Tracking_DB": {
+        "1": "Document Management (Questions pertaining to the types, storage, and retrieval of documents within the database)",
+        "2": "Employee Roles and Responsibilities (Questions focused on the roles of employees in relation to document management and destruction)",
+        "3": "Calendar and Timeframe References (Questions related to date and time references in the database)",
+        "4": "Document Location Tracking (Questions about the movement and location tracking of documents in the database)",
+        "5": "Document Destruction Process (Inquiries about the destruction of documents, including who authorizes and executes the destruction, and when)"
+    },
+    "student_transcripts_tracking": {
+        "1": "Address Information (Questions related to student addresses, such as current and permanent address details)",
+        "2": "Course Details (Queries about the courses, including course name, description, and related details)",
+        "3": "Department Information (Questions about the various departments within the university)",
+        "4": "Degree Program Details (Queries about the degree programs offered by different departments)",
+        "5": "Semester Information (Questions about semesters including name, description, etc)",
+        "6": "Section Details (Queries about different sections within a course)",
+        "7": "Student Details (Questions specifically related to the students, including personal details, contact information, and registration dates)",
+        "8": "Student Enrollment (Questions related to student enrollment in a degree program and semester)",
+        "9": "Student Course Enrollment (Queries about the courses a student is enrolled in during a particular semester)",
+        "10": "Transcript Information (Questions related to transcripts, including date and other details)",
+        "11": "Transcript Content (Queries about the courses reflected in a student's transcript)"
+    },
+    "match_season": {
+        "1": "Country Information (Questions focusing on the country, its name, capital, and official native language)",
+        "2": "Team Information (Questions specifically related to team, including team ID and name)",
+        "3": "Match Season Information (Questions related to the match season, including player, position, country, team, draft pick number, and draft class)",
+        "4": "Player Profile Information (Questions about player profile, including player ID, player name, years played, total win-loss record, singles win-loss record, doubles win-loss record, and team)",
+        "5": "Foreign Key References (Questions focusing on the relationships between different tables, specifically the team and country references in match season and player tables)"
+    },
+    "university_basketball": {
+        "1": "Match Statistics (Questions pertaining to details and statistics of the basketball matches like acc regular season, all games, home and road games etc.)",
+        "2": "Team Information (Questions related to the basketball teams like team id, team name etc. Avoid questions related to universities or matches)",
+        "3": "University Details (Questions specifically related to the universities like location, affiliation, enrollment, nickname, primary conference etc. Avoid questions related to basketball teams or matches)"
+    },
+    "game_1": {   
+        "1": "Student Demographics (Questions specifically related to student information such as name, age, sex, major, advisor, and city code)",
+        "2": "Video Game Details (Questions focused on details about video games such as game name and game type)",
+        "3": "Student-Game Association (Queries about the connection between students and video games, including how many hours a student has played a particular game)",
+        "4": "Sports Participation (Questions related to a student's sports activities, including the name of the sport, hours spent per week, number of games played, and scholarship status)"
+    },
+    "party_host": {
+        "1": "Party Information (Questions specifically related to the parties. Avoid questions related to hosts or party-host relations)",
+        "2": "Host Information (Questions specifically related to hosts. Avoid questions related to parties or party-host relations)",
+        "3": "Party-Host Relationships (Questions specifically related to the relations between parties and hosts. Avoid questions solely related to parties or hosts)"
+    },
+    "college_3": {
+        "1": "Student Data (Questions related to student demographics, studies, or locations)",
+        "2": "Faculty Data (Queries concerning faculty demographics, ranks, or locations)",
+        "3": "Department Data (Questions regarding department divisions, names, or locations)",
+        "4": "Faculty-Department Relations (Queries about the connection between faculty members and departments)",
+        "5": "Course Data (Questions around course details, schedules, or associated departments)",
+        "6": "Student-Department Relations (Queries concerning the relationship between students and their minor departments)",
+        "7": "Student-Course Relations (Questions about students' enrollment and grades in courses)",
+        "8": "Grade Conversion (Queries about the conversion from letter grades to grade points)"
+    },
+    "train_station": {
+        "1": "Station Information (Questions specifically related to the station details. Avoid questions related to train services or number of platforms)",
+        "2": "Train Information (Questions specifically related to train services and timings. Avoid questions related to station details or train-station association)",
+        "3": "Train-Station Association (Questions specifically related to the association between train and stations. Avoid questions related to individual train or station details)",
+        "4": "Passenger Traffic Information (Questions specifically related to passenger traffic at stations. Avoid questions related to train services or train-station association)",
+        "5": "Platform Information (Questions specifically related to the number of platforms at each station. Avoid questions related to train services or passenger traffic)"
+    },
+    "school_player": {
+        "1": "School Basic Information (Questions related to school identity, location, enrollment, founding year, denomination, boys or girls school, day or boarding school, year entered competition, school colors)",
+        "2": "School Details and League (Questions related to school nickname, colors, league, classification, division)",
+        "3": "School Performance (Questions related to school performance in different classes over the years)",
+        "4": "Player Profiles (Questions related to player identity, team, age, position, and affiliated school)"
+    },
+    "wta_1": {
+        "1": "Player Details (Questions related to the personal information, nationality, and style of play of the players)",
+        "2": "Match Statistics (Questions related to the specifics of matches, including the players involved, scores, and match time)",
+        "3": "Player Rankings (Questions related to the rankings of the players, their points, and the date of ranking)",
+        "4": "Tournament Details (Questions related to the specifics of tournaments, including name, level, date, and associated matches)",
+        "5": "Player Performance (Questions related to the performance of players in matches, including the winner and loser details, their age, hand, height, and rank)"
+    },
+    "college_1": {
+        "1": "Class and Course Information (Questions related to the class timings, rooms, professors, and course details such as course descriptions and credits)",
+        "2": "Department Information (Questions related to the department's details such as department name, school code, department address and extension)",
+        "3": "Employee and Professor Information (Questions related to employee's personal details, job code, hire date, and professor's office, extension, highest degree)",
+        "4": "Student Enrollment Details (Questions related to student's enrollment in classes, their grades)",
+        "5": "Student Personal and Academic Information (Questions related to student's personal details, class hours took, GPA, transfer status, department code)",
+        "6": "Inter-relationships between Tables (Questions related to the foreign key relationships between different tables in the database)"
+    },
+    "assets_maintenance": {
+        "1": "Third-Party Companies Details (Questions related to the information about third-party companies)",
+        "2": "Maintenance Contracts Information (Questions related to the details of maintenance contracts)",
+        "3": "Parts Information (Questions related to the specifics of parts)",
+        "4": "Skills Information (Questions related to the details about skills available)",
+        "5": "Staff Details (Questions related to the information about staff members)",
+        "6": "Assets Information (Questions related to the specifics of assets)",
+        "7": "Asset Parts Details (Questions related to the information about asset parts)",
+        "8": "Maintenance Engineers Information (Questions about the specifics of maintenance engineers)",
+        "9": "Engineer Skills Details (Questions related to the skills of the engineers)",
+        "10": "Fault Log Information (Questions related to the details in the fault log)",
+        "11": "Engineer Visits Details (Questions related to the information about engineer visits)",
+        "12": "Part Faults Information (Questions related to the specifics of part faults)",
+        "13": "Fault Log Parts Details (Questions related to the details about fault log parts)",
+        "14": "Skills Required to Fix Information (Questions about the skills required to fix part faults)"
+    },
+    "customer_deliveries": {
+        "1": "Product Details (Questions specifically related to the products, their prices, and descriptions)",
+        "2": "Address Information (Questions specifically related to address details, city, zip code, state, province, county, and country)",
+        "3": "Customer Information (Questions specifically related to customer details, payment methods, customer name, phone, email, and date customer became active)",
+        "4": "Order Details (Questions specifically related to regular and actual orders, order status, order date, and associated customers and products)",
+        "5": "Delivery Information (Questions specifically related to delivery routes, locations, trucks, delivery status, and associated employees)",
+        "6": "Employee Information (Questions specifically related to employees, their names, phone numbers, and addresses)"
+    },
+    "real_estate_properties": {
+        "1": "Reference Feature Types Information (Questions specifically related to the feature_type_code and feature_type_name in the reference_feature_types table)",
+        "2": "Reference Property Types Information (Questions specifically related to the property_type_code and property_type_description in the reference_property_types table)",
+        "3": "Other Available Features Information (Questions related to the feature_id, feature_type_code, feature_name, and feature_description in the other_available_features table)",
+        "4": "Property Information (Questions related to the property_id, property_type_code, dates on market and sold, property_name, property_address, room_count, prices, features, and other details in the properties table)",
+        "5": "Other Property Features Information (Questions specifically related to the property_id, feature_id, and property_feature_description in the other_property_features table)"
+    },
+    "customer_complaints": {
+        "1": "Staff Information (Questions specifically related to the staff. Avoid questions related to products, customers, or complaints)",
+        "2": "Customer Data (Questions specifically related to customers. Avoid questions related to staff, products, or complaints)",
+        "3": "Product Details (Questions specifically related to products. Avoid questions related to staff, customers, or complaints)",
+        "4": "Complaints Status and Resolution (Questions specifically related to complaints. Avoid questions related to staff, customers, or products)"
+    },
+    "workshop_paper": {
+        "1": "Workshop Details (Questions specifically related to workshop details like date, venue etc. Avoid questions related to submissions or acceptances)",
+        "2": "Submission Information (Questions specifically related to submissions made by authors from different colleges. Avoid questions related to workshop details or acceptances)",
+        "3": "Acceptance Information (Questions specifically related to acceptance details of submissions for different workshops. Avoid questions related to workshop details or submissions)"
+    },
+    "soccer_1": {
+        "1": "Player Attributes (Questions specifically related to the attributes of soccer players. Avoid questions related to teams or leagues)",
+        "2": "Team Attributes (Questions specifically related to the attributes of soccer teams. Avoid questions related to players or leagues)",
+        "3": "League Information (Questions specifically related to leagues in soccer. Avoid questions related to players or teams)",
+        "4": "Country Information (Questions specifically related to the countries that the soccer leagues belong to. Avoid questions related to players, teams or leagues)",
+        "5": "Player Personal Information (Questions specifically related to the personal information of soccer players like height, weight etc. Avoid questions related to player attributes, teams or leagues)",
+        "6": "Team Identification Information (Questions specifically related to the identification information of soccer teams like team name, team id etc. Avoid questions related to team attributes, players or leagues)"
+    },
+    "car_1": {
+        "1": "Continent Information (Questions specifically related to the continents. Avoid questions related to countries or car makers)",
+        "2": "Country Information (Questions specifically related to countries. Avoid questions related to continents or car makers)",
+        "3": "Car Maker Information (Questions specifically related to car makers. Avoid questions related to countries or continents)",
+        "4": "Model List Information (Questions specifically related to the model list. Avoid questions related to car makers or car names)",
+        "5": "Car Name Information (Questions specifically related to car names. Avoid questions related to model list or cars data)",
+        "6": "Car Data Information (Questions specifically related to car data. Avoid questions related to car names or model list)"
+    },
+    "wrestler": {
+        "1": "Wrestler Profile Information (Questions specifically related to the wrestler profiles. Avoid questions related to eliminations)",
+        "2": "Elimination Details (Questions specifically related to the eliminations. Avoid questions related to wrestler profiles)",
+        "3": "Event Specific Information (Questions specifically related to the events. Avoid questions related to wrestler profiles or eliminations)",
+        "4": "Location Based Inquiries (Questions specifically related to the locations of the events. Avoid questions related to wrestler profiles or eliminations)",
+        "5": "Wrestler Performance (Questions specifically related to the reign and days held by wrestlers. Avoid questions related to eliminations or event specifics)"
+    },
+    "epinions_1": {
+        "1": "Item Information (Questions specifically related to the items. Avoid questions related to reviews or user accounts)",
+        "2": "Review Information (Questions specifically related to reviews. Avoid questions related to items or user accounts)",
+        "3": "User Account Information (Questions specifically related to user accounts. Avoid questions related to items or reviews)",
+        "4": "Trust Relationships (Questions specifically related to trust relationships between users. Avoid questions related to items, reviews, or individual user accounts)"
+    },
+    "soccer_2": {
+        "1": "State-wise College Distribution (Questions related to the distribution of colleges across different states)",
+        "2": "Enrollment Information (Questions focused on the enrollment statistics of various colleges)",
+        "3": "Player Performance Analysis (Questions related to hours of training and performance of players)",
+        "4": "Player Discipline Status (Queries regarding the cards given to players)",
+        "5": "Player-College Association (Questions related to which player is associated with which college)",
+        "6": "Tryout Decisions (Questions about the final decisions made after tryouts)",
+        "7": "Player Position in Tryouts (Queries regarding the position of players in tryouts)"
+    },
+    "phone_1": {
+        "1": "Chip Model Information (Questions specifically related to the chip model. Avoid questions related to screen mode or phone)",
+        "2": "Screen Mode Information (Questions specifically related to screen mode. Avoid questions related to chip model or phone)",
+        "3": "Phone Information (Questions specifically related to phone. Avoid questions related to chip model or screen mode)",
+        "4": "Accreditation Details (Questions specifically related to accreditation type and level. These are specific to the phone table)",
+        "5": "Database Relationships (Questions regarding the relationship between tables and foreign keys in the database)",
+        "6": "Data Storage Information (Questions related to storage capacity as referenced in the chip model and screen mode tables)"
+    },
+    "document_management": {
+        "1": "User and Role Management (Questions related to the users, their roles and permissions in the database)",
+        "2": "Document Structure (Questions about how documents are structured and their relationships)",
+        "3": "Functional Areas Management (Questions concerning functional areas and their hierarchies in the database)",
+        "4": "Image Management (Questions related to the images, their metadata and organization)",
+        "5": "Document Management (Questions concerning the creation, modification, and deletion of documents)",
+        "6": "Document and Functional Area Association (Questions regarding how documents are associated with functional areas)",
+        "7": "Document Sections Management (Questions concerning the creation, modification, and deletion of sections in a document)",
+        "8": "Document Section and Image Association (Questions regarding how images are associated with sections in a document)"
+    },
+    "wine_1": {
+        "1": "Grape Varieties Information (Questions specifically related to the grape varieties. Avoid questions related to appellations or wine details)",
+        "2": "Appellation Details (Questions specifically related to appellations. Avoid questions related to grape varieties or wine details)",
+        "3": "Wine Profiles (Questions specifically related to different wines. Avoid questions related to grape varieties or appellations)",
+        "4": "Pricing and Scoring Details (Questions specifically related to the price and score of the wines. Avoid questions related to grape varieties or appellations)",
+        "5": "Winery Information (Questions specifically related to wineries. Avoid questions related to grape varieties, appellations, or wine details)"
+    },
+    "department_management": {
+        "1": "Department Information (Questions specifically related to the department. Avoid questions related to head or management)",
+        "2": "Head Information (Questions specifically related to the head of the department. Avoid questions related to department or management)",
+        "3": "Management Information (Questions specifically related to the management of the department. Avoid questions related to head or department)",
+        "4": "Department and Head Relationship (Questions about how departments and heads are related)",
+        "5": "Department and Management Relationship (Questions about how departments and management are related)",
+        "6": "Head and Management Relationship (Questions about how heads and management are related)"
+    },
+    "behavior_monitoring": {
+        "1": "Address Information (Questions relating to various addresses and their types in the database)",
+        "2": "Student Details (Queries specific to student demographics, contact details, and addresses)",
+        "3": "Teacher Profiles (Questions relating to teacher demographics, contact details and addresses)",
+        "4": "Assessment Notes (Queries about the notes made by teachers on student assessments)",
+        "5": "Behavioral Incidents (Questions about incidents involving students and their types)",
+        "6": "Detention Records (Queries about detention details, types, and the teachers involved)",
+        "7": "Student Accommodation Information (Questions about the addresses students have lived at and related details)",
+        "8": "Students in Detention (Queries about the students who have been put in detention and the related incidents)"
+    },
+    "solvency_ii": {
+        "1": "Address Information (Questions specifically related to addresses. Avoid questions related to other entities)",
+        "2": "Location Information (Questions specifically related to locations. Avoid questions related to other entities)",
+        "3": "Product Information (Questions specifically related to the products. Avoid questions related to other entities)",
+        "4": "Party Information (Questions specifically related to parties. Avoid questions related to other entities)",
+        "5": "Asset Information (Questions specifically related to assets. Avoid questions related to other entities)",
+        "6": "Channel Information (Questions specifically related to channels. Avoid questions related to other entities)",
+        "7": "Finance Information (Questions specifically related to finances. Avoid questions related to other entities)",
+        "8": "Event Information (Questions specifically related to events. Avoid questions related to other entities)",
+        "9": "Product in Event Information (Questions specifically related to the products in events. Avoid questions related to other entities)",
+        "10": "Party in Event Information (Questions specifically related to parties in events. Avoid questions related to other entities)",
+        "11": "Agreements Information (Questions specifically related to agreements. Avoid questions related to other entities)",
+        "12": "Asset in Event Information (Questions specifically related to assets in events. Avoid questions related to other entities)"
+    },
+    "bike_1": {   
+        "1": "Station Information (Questions specifically related to the stations, such as location, dock count, and associated city)", 
+        "2": "Status Information (Questions specifically related to the status of each station, including bike and dock availability)", 
+        "3": "Trip Information (Questions specifically related to the trips, including duration, start and end dates, and subscription type)",
+        "4": "Weather Information (Questions specifically related to the weather on a given date, including temperature, humidity, visibility, wind speed, and precipitation)",
+        "5": "Correlation between Weather and Trip (Questions related to the impact of weather conditions on trip details)",
+        "6": "Correlation between Station and Trip (Questions related to how the station's details affect the trip details)",
+        "7": "Correlation between Station Status and Trip (Questions related to how the status of a station affects the trip details)"
+    },
+    "insurance_and_eClaims": {
+        "1": "Customer Information (Questions specifically related to the customers and their policies. Avoid questions related to staff or claim processing)",
+        "2": "Staff Information (Questions specifically related to staff and their role in claim processing. Avoid questions related to customers or claim headers)",
+        "3": "Policy Information (Questions specifically related to policies and their details. Avoid questions related to claim headers or claim documents)",
+        "4": "Claim Headers Information (Questions specifically related to claim headers and their status. Avoid questions related to policies or claim processing stages)",
+        "5": "Claim Documents Information (Questions specifically related to claim documents and their creation. Avoid questions related to claim headers or staff)",
+        "6": "Claim Processing Stages Information (Questions specifically related to claim processing stages and their descriptions. Avoid questions related to claim documents or claim processing)",
+        "7": "Claim Processing Information (Questions specifically related to the claim processing and its outcome. Avoid questions related to claim processing stages or staff)"
+    },
+    "yelp": {
+        "1": "Business Information (Questions specifically related to the businesses, their addresses, ratings, and operational status. Avoid questions related to reviews, check-ins, or categories)",
+        "2": "Category Information (Questions specifically related to business categories. Avoid questions related to business details, check-ins, or reviews)",
+        "3": "User Information (Questions specifically related to users. Avoid questions related to reviews, tips, or check-ins)",
+        "4": "Check-in Information (Questions specifically related to business check-ins. Avoid questions related to business details, categories, or users)",
+        "5": "Neighbourhood Information (Questions specifically related to neighbourhoods. Avoid questions related to business details, categories, or reviews)",
+        "6": "Review Information (Questions specifically related to reviews. Avoid questions related to business details, categories, or user information)",
+        "7": "Tip Information (Questions specifically related to tips. Avoid questions related to business details, categories, or reviews)"
+    },
+    "store_1": {
+        "1": "Artist and Album information (Questions related to artists and their corresponding albums. Avoid questions related to other entities)",
+        "2": "Employee Details and Hierarchy (Questions specifically about employees, their personal details and reporting structure. Avoid questions about customers or invoices)",
+        "3": "Customer Information and their Support Representatives (Questions related to customers and their assigned support representatives. Avoid questions related to invoices or tracks)",
+        "4": "Genre and Media Type information (Questions specifically related to genres and media types. Avoid questions related to tracks or playlists)",
+        "5": "Track information and its Relations (Questions about tracks, their composers, genre, media type and related album. Avoid questions related to invoices or playlists)",
+        "6": "Invoice Details and Customer Billing Information (Questions specifically about invoices, their details and customer billing information. Avoid questions related to invoice lines or tracks)",
+        "7": "Invoice Line Items (Questions related to individual items on an invoice. Avoid questions related to invoices or customers)",
+        "8": "Playlist and its Tracks (Questions about playlists and the tracks they contain. Avoid questions related to genres or media types)"
+    },
+    "product_catalog": {
+        "1": "Attribute Definitions Information (Questions specifically related to the attribute definitions. Avoid questions related to catalogs, catalog structure, catalog contents, or catalog contents additional attributes)",
+        "2": "Catalogs Information (Questions specifically related to catalogs. Avoid questions related to attribute definitions, catalog structure, catalog contents, or catalog contents additional attributes)",
+        "3": "Catalog Structure Information (Questions specifically related to the catalog structure. Avoid questions related to attribute definitions, catalogs, catalog contents, or catalog contents additional attributes)",
+        "4": "Catalog Contents Information (Questions specifically related to the catalog contents. Avoid questions related to attribute definitions, catalogs, catalog structure, or catalog contents additional attributes)",
+        "5": "Catalog Contents Additional Attributes Information (Questions specifically related to the catalog contents additional attributes. Avoid questions related to attribute definitions, catalogs, catalog structure, or catalog contents)"
+    },
+    "customers_and_addresses": {
+        "1": "Customer Information (Questions specifically related to the customers. Avoid questions related to addresses or orders)",
+        "2": "Address Information (Questions specifically related to addresses. Avoid questions related to customers or products)",
+        "3": "Product Information (Questions specifically related to products. Avoid questions related to addresses or customers)",
+        "4": "Customer-Address Relations (Questions specifically related to the relationship between customers and addresses. Avoid questions related to products)",
+        "5": "Customer Contact Channels (Questions specifically related to the contact channels of customers. Avoid questions related to addresses or products)",
+        "6": "Customer Orders (Questions specifically related to the orders made by customers. Avoid questions related to addresses or contact channels)",
+        "7": "Order Items (Questions specifically related to the items in the orders. Avoid questions related to contact channels or customers)"
+    },
+    "customers_and_products_contacts": {
+        "1": "Address Information (Questions specifically related to the addresses. Avoid questions related to customers or products)",
+        "2": "Product Information (Questions specifically related to the products. Avoid questions related to customers or addresses)",
+        "3": "Customer Information (Questions specifically related to the customers. Avoid questions related to products or addresses)",
+        "4": "Contact Information (Questions specifically related to the contacts. Avoid questions related to customer address history or customer orders)",
+        "5": "Customer Address History Information (Questions specifically related to the customer address history. Avoid questions related to customer orders or order items)",
+        "6": "Customer Order Information (Questions specifically related to the customer orders. Avoid questions related to order items or contacts)",
+        "7": "Order Item Information (Questions specifically related to the order items. Avoid questions related to customer address history or contacts)"
+    },
+    "customers_and_invoices": {
+        "1": "Customer Information (Questions related to customer details, login credentials, location etc. Avoid questions related to their orders, invoices or accounts)",
+        "2": "Order Details (Questions specifically related to the orders placed by customers. Avoid questions related to invoices, accounts or customer information)",
+        "3": "Invoice Details (Questions related to the invoices generated for orders. Avoid questions related to orders, accounts or customer information)",
+        "4": "Account Details (Questions specifically related to customer's accounts. Avoid questions related to their orders, invoices or personal details)",
+        "5": "Product Categories (Questions related to different types of products and their VAT ratings. Avoid questions related to specific products, orders or invoices)",
+        "6": "Product Information (Questions related to specific products, their prices and features. Avoid questions related to product categories, orders or invoices)",
+        "7": "Financial Transactions (Questions specifically related to financial transactions in customer accounts. Avoid questions related to customer details, orders or invoices)",
+        "8": "Order Items (Questions related to items in an order. Avoid questions related to specific orders, invoices or products)",
+        "9": "Invoice Line Items (Questions related to items mentioned in an invoice. Avoid questions related to specific invoices, orders or products)"
+    },
+    "local_govt_mdm": {
+        "1": "Customer Master Index Information (Questions specifically related to the customer_master_index table. Avoid questions related to the cross-references or individual services)",
+        "2": "Cross References Information (Questions specifically related to the cmi_cross_references table. Avoid questions related to the customer master index or individual services)",
+        "3": "Council Tax Information (Questions specifically related to the council_tax table. Avoid questions related to the customer master index, cross references or other services)",
+        "4": "Business Rates Information (Questions specifically related to the business_rates table. Avoid questions related to the customer master index, cross references or other services)",
+        "5": "Benefits Overpayments Information (Questions specifically related to the benefits_overpayments table. Avoid questions related to the customer master index, cross references or other services)",
+        "6": "Parking Fines Information (Questions specifically related to the parking_fines table. Avoid questions related to the customer master index, cross references or other services)",
+        "7": "Rent Arrears Information (Questions specifically related to the rent_arrears table. Avoid questions related to the customer master index, cross references or other services)",
+        "8": "Electoral Register Information (Questions specifically related to the electoral_register table. Avoid questions related to the customer master index, cross references or other services)"
+    },
+    "protein_institute": {
+        "1": "Building Information (Questions specifically related to the building details, name, address, height, number of floors etc.)",
+        "2": "Institution Details (Questions related to the institution such as location, founding year, type, enrollment, team and primary conference)",
+        "3": "Protein Analysis (Questions related to protein data such as common name, protein name, divergence from human lineage, accession number, sequence length, sequence identity to human protein)",
+        "4": "Building-Institution Relationship (Questions related to the relationship between the building and the institution, based on the foreign key reference in the institution table)",
+        "5": "Protein-Institution Relationship (Questions related to the relationship between the protein and the institution, based on the foreign key reference in the protein table)"
+    },
+    "company_1": {
+        "1": "Employee Information (Questions specifically related to employee data. Avoid questions related to projects, departments, or dependents)",
+        "2": "Department Information (Questions specifically related to department data. Avoid questions related to employees, projects, or dependents)",
+        "3": "Project Information (Questions specifically related to project data. Avoid questions related to employees, departments, or dependents)",
+        "4": "Dependent Information (Questions specifically related to dependent data. Avoid questions related to employees, projects, or departments)",
+        "5": "Work Assignment Information (Questions specifically related to the works_on data. Avoid questions related to employees, departments, projects, or dependents)",
+        "6": "Department Location Information (Questions specifically related to the department_locations data. Avoid questions related to employees, departments, projects, or dependents)"
+    },
+    "hospital_1": {
+        "1": "Physician Information (Questions specifically related to the physicians. Avoid questions related to departments or affiliations)",
+        "2": "Department Information (Questions specifically related to the departments. Avoid questions related to physicians or affiliations)",
+        "3": "Affiliation Information (Questions specifically related to affiliations between physicians and departments. Avoid questions related to physicians or departments individually)",
+        "4": "Procedures Information (Questions specifically related to medical procedures. Avoid questions related to training or undergoing procedures)",
+        "5": "Training Information (Questions specifically related to physician training in procedures. Avoid questions related to procedures or physicians individually)",
+        "6": "Patient Information (Questions specifically related to patients. Avoid questions related to appointments or stays)",
+        "7": "Nurse Information (Questions specifically related to nurses. Avoid questions related to appointments or on-call times)",
+        "8": "Appointment Information (Questions specifically related to patient appointments. Avoid questions related to patients or nurses individually)",
+        "9": "Medication Information (Questions specifically related to medications. Avoid questions related to prescribing information)",
+        "10": "Prescription Information (Questions specifically related to prescriptions. Avoid questions related to medications or patients individually)",
+        "11": "Block and Room Information (Questions specifically related to blocks and rooms. Avoid questions related to stays or on-call times)",
+        "12": "On-Call Information (Questions specifically related to nurse on-call times. Avoid questions related to blocks or rooms individually)",
+        "13": "Stay Information (Questions specifically related to patient stays. Avoid questions related to rooms or undergoing procedures)",
+        "14": "Undergoing Procedure Information (Questions specifically related to patients undergoing procedures. Avoid questions related to stays or procedures individually)"
+    },
+    "voter_2": {
+        "1": "Student Demographics (Questions about the student's age, sex, major, and city code. Avoid questions related to voting records)",
+        "2": "Voting Records (Questions about the student's voting records, including registration date and votes for different positions. Avoid questions related to student demographics)",
+        "3": "Election Cycle Data (Questions specifically about the different election cycles and the voting records associated with these cycles. Avoid questions related to specific students or their demographics)",
+        "4": "Major-Related Voting Trends (Questions related to the voting trends of students based on their major. Avoid questions related to individual students or specific election cycles)",
+        "5": "Gender-Based Voting Trends (Questions related to the voting trends of students based on their gender. Avoid questions related to individual students or specific election cycles)",
+        "6": "Advisor Influence on Voting Trends (Questions related to the influence of advisors on students' voting behavior. Avoid questions related to individual students or specific election cycles)"
+    },
+    "cre_Theme_park": {
+        "1": "Hotel Information (Questions specifically related to the hotels. Avoid questions related to attractions or visitors)",
+        "2": "Visitor Information (Questions specifically related to visitors. Avoid questions related to hotels or attractions)",
+        "3": "Tourist Attraction Information (Questions specifically related to tourist attractions. Avoid questions related to hotels or visitors)",
+        "4": "Location Information (Questions specifically related to locations. Avoid questions related to hotels, visitors, or attractions)",
+        "5": "Staff Information (Questions specifically related to staff. Avoid questions related to hotels, visitors, or attractions)",
+        "6": "Feature Information (Questions specifically related to features of attractions. Avoid questions related to hotels, visitors, or staff)",
+        "7": "Visit Information (Questions specifically related to visits to attractions. Avoid questions related to hotels, visitors, or staff)",
+        "8": "Photo Information (Questions specifically related to photos of attractions. Avoid questions related to hotels, visitors, or staff)",
+        "9": "Attraction Type Information (Questions specifically related to different types of attractions. Avoid questions related to hotels, visitors, or staff)"
+    },
+    "geo": {
+        "1": "State Information (Questions specifically related to the states, their population, area, capital, and density. Avoid questions related to cities, borders, landmarks, or bodies of water)",
+        "2": "City Information (Questions specifically related to cities and their populations. Avoid questions related to states, borders, landmarks, or bodies of water)",
+        "3": "Border Information (Questions specifically related to which states border each other. Avoid questions related to cities, states, landmarks, or bodies of water)",
+        "4": "High and Low Points Information (Questions specifically related to the highest and lowest points in each state. Avoid questions related to cities, states, borders, or bodies of water)",
+        "5": "Lake Information (Questions specifically related to the lakes in each state. Avoid questions related to cities, states, borders, or high and low points)",
+        "6": "Mountain Information (Questions specifically related to the mountains in each state. Avoid questions related to cities, states, borders, high and low points, or lakes)",
+        "7": "River Information (Questions specifically related to the rivers in each state. Avoid questions related to cities, states, borders, high and low points, lakes, or mountains)"
+    },
+    "scholar": {
+        "1": "Venue Information (Questions specifically related to the venues. Avoid questions related to authors, datasets, journals, key phrases, papers, citations, and writing)",
+        "2": "Author Information (Questions specifically related to authors. Avoid questions related to venues, datasets, journals, key phrases, papers, citations, and writing)",
+        "3": "Dataset Information (Questions specifically related to datasets. Avoid questions related to venues, authors, journals, key phrases, papers, citations, and writing)",
+        "4": "Journal Information (Questions specifically related to journals. Avoid questions related to venues, authors, datasets, key phrases, papers, citations, and writing)",
+        "5": "Key Phrase Information (Questions specifically related to key phrases. Avoid questions related to venues, authors, datasets, journals, papers, citations, and writing)",
+        "6": "Paper Information (Questions specifically related to papers. Avoid questions related to venues, authors, datasets, journals, key phrases, citations, and writing)",
+        "7": "Citation Information (Questions specifically related to citations. Avoid questions related to venues, authors, datasets, journals, key phrases, papers, and writing)",
+        "8": "Writing Information (Questions specifically related to writing. Avoid questions related to venues, authors, datasets, journals, key phrases, papers, and citations)"
+    },
+    "cre_Drama_Workshop_Groups": {
+        "1": "Payment Methods Information (Questions specifically related to payment methods and transactions)",
+        "2": "Service Types Information (Questions specifically related to the types of services offered)",
+        "3": "Address Information (Questions specifically related to the addresses of clients, performers, stores, etc.)",
+        "4": "Product Information (Questions specifically related to the products sold)",
+        "5": "Marketing Region Information (Questions specifically related to marketing regions)",
+        "6": "Client Information (Questions specifically related to clients)",
+        "7": "Drama Workshop Groups Information (Questions specifically related to drama workshop groups)",
+        "8": "Performer Information (Questions specifically related to performers)",
+        "9": "Customer Information (Questions specifically related to customers)",
+        "10": "Store Information (Questions specifically related to stores)",
+        "11": "Booking Information (Questions specifically related to bookings)",
+        "12": "Performer Booking Information (Questions specifically related to performers involved in bookings)",
+        "13": "Customer Order Information (Questions specifically related to customer orders)",
+        "14": "Order Items Information (Questions specifically related to specific items in orders)",
+        "15": "Invoice Information (Questions specifically related to invoices)",
+        "16": "Service Information (Questions specifically related to services offered)",
+        "17": "Booking Services Information (Questions specifically related to services booked)",
+        "18": "Invoice Items Information (Questions specifically related to specific items in invoices)"
+    },
+    "formula_1": {
+        "1": "Circuit Information (Questions specifically related to the circuits. Avoid questions related to races, drivers or constructors)",
+        "2": "Race Information (Questions specifically related to races. Avoid questions related to circuits, drivers or constructors)",
+        "3": "Driver Information (Questions specifically related to drivers. Avoid questions related to circuits, races or constructors)",
+        "4": "Status Information (Questions specifically related to status. Avoid questions related to circuits, races, drivers or constructors)",
+        "5": "Season Information (Questions specifically related to seasons. Avoid questions related to circuits, races, drivers or constructors)",
+        "6": "Constructor Information (Questions specifically related to constructors. Avoid questions related to circuits, races, drivers or constructors)",
+        "7": "Constructor Standings Information (Questions specifically related to constructor standings. Avoid questions related to circuits, races, drivers or constructors)",
+        "8": "Results Information (Questions specifically related to results. Avoid questions related to circuits, races, drivers or constructors)",
+        "9": "Driver Standings Information (Questions specifically related to driver standings. Avoid questions related to circuits, races, drivers or constructors)",
+        "10": "Constructor Results Information (Questions specifically related to constructor results. Avoid questions related to circuits, races, drivers or constructors)",
+        "11": "Qualifying Information (Questions specifically related to qualifying. Avoid questions related to circuits, races, drivers or constructors)",
+        "12": "Pit Stops Information (Questions specifically related to pit stops. Avoid questions related to circuits, races, drivers or constructors)",
+        "13": "Lap Times Information (Questions specifically related to lap times. Avoid questions related to circuits, races, drivers or constructors)"
+    },
+    "election_representative": {
+        "1": "Election Details (Questions specifically related to the election data. Avoid questions related to representative details)",
+        "2": "Representative Information (Questions specifically related to representative details. Avoid questions related to election data)",
+        "3": "Party Analysis (Questions specifically related to party representation and performance in elections. Avoid questions related to specific representatives or elections)",
+        "4": "State-based Analysis (Questions specifically related to the performance and representation of states in elections. Avoid questions related to specific representatives or parties)",
+        "5": "Time-based Analysis (Questions specifically related to the election data over time. Avoid questions related to specific representatives or states)"
+    },
+    "baseball_1": {
+        "1": "All Star Game Details (Questions regarding the all star games, players involved and their positions)",
+        "2": "Player Appearances (Questions related to player appearances in games, including positions played and teams represented)",
+        "3": "Manager Awards (Questions pertaining to awards received by managers, including the awarding body and year)",
+        "4": "Player Awards (Questions about awards received by players, including the awarding body and year)",
+        "5": "Manager Award Votes (Questions related to the voting process for manager awards)",
+        "6": "Player Award Votes (Questions related to the voting process for player awards)",
+        "7": "Batting Statistics (Questions regarding players' batting statistics, including hits, runs and home runs)",
+        "8": "Postseason Batting Statistics (Questions regarding players' batting statistics during postseason)",
+        "9": "Player College Details (Questions pertaining to the colleges attended by the players)",
+        "10": "Fielding Statistics (Questions regarding players' fielding statistics, including positions played and teams represented)",
+        "11": "Outfield Fielding Statistics (Questions regarding outfield players' fielding statistics)",
+        "12": "Postseason Fielding Statistics (Questions regarding players' fielding statistics during postseason)",
+        "13": "Hall of Fame Inductees (Questions related to players' induction into the Hall of Fame)",
+        "14": "Home Game Details (Questions pertaining to home games, including attendance and venue)",
+        "15": "Manager Statistics (Questions regarding managers' performance and rank)",
+        "16": "Half Season Manager Statistics (Questions regarding managers' performance during half seasons)",
+        "17": "Player Personal Details (Questions related to players' personal details, such as birthdate and birthplace)",
+        "18": "Park Information (Questions pertaining to baseball parks, including location and alias)",
+        "19": "Pitching Statistics (Questions regarding players' pitching statistics, including hits, runs and home runs)",
+        "20": "Postseason Pitching Statistics (Questions regarding players' pitching statistics during postseason)",
+        "21": "Player Salary Information (Questions related to players' salaries)",
+        "22": "College Details (Questions related to colleges, including location and full name)",
+        "23": "Postseason Details (Questions related to postseason games, including winning and losing teams)",
+        "24": "Team Statistics (Questions regarding team performance, including wins, losses and home runs)",
+        "25": "Team Franchise Information (Questions related to team franchises, including franchise name and association)",
+        "26": "Half Season Team Statistics (Questions regarding team performance during half seasons)"
+    }
+}
