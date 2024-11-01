@@ -1,7 +1,7 @@
 {
     "data_path": "local_data/spider/",
     "database_path": "local_data/spider/database",
-    "create_statement_path": "../synsql/data/spider_create_statements.json",
+    "create_statement_path": "local_data/spider_create_statements.json",
 
     "model": "gpt-4",
     "temperature": 0.7,

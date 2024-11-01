@@ -3,16 +3,18 @@ Topic Generation Script
 
 This script is an example of using SynQL to generate topics given a database. It requires a configuration file, as shown in `configs/topic_example.json`. Additionally, the script expects a `.env` file in the root of the directory. 
 
-python topic.py \ 
-    --config configs/topic_example.json
+python topic.py --config configs/topic_example.json
 """
 
 # system packages 
 import os
+import sys
 import json
+import time
 import argparse
 import logging
 import asyncio
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # internal packages
 import synql
@@ -20,8 +22,6 @@ from synql import process_api_requests_from_file, prepare_batch_request_file
 
 # external packages
 from dotenv import load_dotenv
-
-import synql.synql
 load_dotenv("../.env")
 
 if __name__ == "__main__": 
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     topic_system_prompt_version = config["topic_system_prompt_version"]
 
     save_local = config["save_local"]
-    save_prompt_path = config["save_local"]
+    save_prompt_path = config["save_prompt_path"]
     save_results_path = config["save_results_path"]
 
     # Initialize SynQL
@@ -95,10 +95,19 @@ if __name__ == "__main__":
         args=args
     )
 
+    # check three times to see if save_prompt_path.jsonl exists. wait 2 seconds between each check
+    final_save_prompt_path = save_prompt_path + ".jsonl"
+    for i in range(3):
+        if os.path.exists(final_save_prompt_path):
+            break
+        else:
+            print(f"waiting for {final_save_prompt_path} to exist")
+            time.sleep(2)
+
     if run_generation:
         asyncio.run(
             process_api_requests_from_file(
-                requests_filepath=save_prompt_path,
+                requests_filepath=final_save_prompt_path,
                 save_filepath=save_results_path,
                 request_url=request_url,
                 api_key=open_ai_api_key,

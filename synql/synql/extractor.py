@@ -1,7 +1,6 @@
 # basic packages
 import re
 import string
-from IPython.utils import io
 from itertools import combinations
 from typing import Union, List, Optional, Dict, Type, Any, Callable, Tuple
 
@@ -9,6 +8,7 @@ from typing import Union, List, Optional, Dict, Type, Any, Callable, Tuple
 import sqlglot as sg
 from sqlglot.diff import Keep
 import networkx as nx
+from IPython.utils import io
 
 class Extractor:
     """A class for extracting and manipulating information in SQL Queries.

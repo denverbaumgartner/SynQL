@@ -3,8 +3,7 @@ Joint Generation Script
 
 This script is an example of using SynQL to generate QQPs from databases, topics, and query templates. It requires a configuration file, as shown in `configs/joint_example.json`. Additionally, the script expects a `.env` file in the root of the directory. 
 
-python topic.py \ 
-    --config configs/joint_example.json
+python joint.py --config configs/joint_example.json
 """
 
 # system packages 
@@ -21,7 +20,7 @@ from synql import process_api_requests_from_file, prepare_batch_request_file
 # external packages
 from dotenv import load_dotenv
 
-import synql.synql
+# import synql.synql
 load_dotenv("../.env")
 
 if __name__ == "__main__": 
@@ -99,8 +98,10 @@ if __name__ == "__main__":
         "save_local_path": save_prompt_path,  
         "schemas": create_statements,
         "topics": topics,
-        "queries": query_templates_path,
+        "queries": templates,
     }
+
+    print(args["queries"])
 
     # Generate the requests (prompts)
     syn.joint_generator.format_qqp_data_request(

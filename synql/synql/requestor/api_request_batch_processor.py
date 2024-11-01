@@ -80,7 +80,7 @@ from openai import OpenAI
 
 # internal packages
 
-client = OpenAI()
+# client = OpenAI()
 
 def prepare_batch_request_file(
         input_file_path: str,
