@@ -41,5 +41,5 @@ python joint.py --config configs/joint_example.json
 
 ### Batch Generation
 ```bash
-python joint.py --config configs/joint_example.json 
+python batch.py --config configs/batch_example.json
 ```
